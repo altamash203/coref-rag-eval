@@ -6,18 +6,32 @@
 - **The problem:** a dense retriever matches on what's in the chunk — if the chunk says *"he resigned"* but the query says *"Armstrong"*, there is no shared entity string to match on.
 - **Small chunks lose context:** at sentence level, the antecedent (*"Armstrong joined NASA in 1962"*) lives in a different chunk, so *"He resigned in 1971"* has no entity name left in it.
 
-This repo tests a simple idea: if a passage says *"he won the Nobel Prize"* instead of
-*"Marie Curie won the Nobel Prize,"* a dense retriever might miss it when you search for
-"Marie Curie." So we rewrite pronouns to entity names before embedding — and measure whether
-retrieval actually gets better.
+## Abstract
 
-**TL;DR:** Smaller (sentence-level) chunks hurt retrieval when gold text uses pronouns instead
-of entity names — baseline R@5 on coref-critical questions was 0.77 (Test 4) vs 0.80+ on
-paragraph benchmarks (Tests 2–3). **LLM-based coref worked better than the LingMess model:**
-+17pp Recall@5 with zero regressions (Test 4) vs +5pp with 1 regression (Test 1) and flat
-results despite 77–89% pronoun reduction (Tests 2–3). But LLM coref is not a universal fix —
-Test 5 used the same manual coref on 414 sentence chunks and dense retrieval stayed flat (0.93),
-with only a small hybrid gain (+3pp, 2 recovered / 1 hurt).
+We evaluate whether resolving coreference — rewriting pronouns to their antecedent entity names
+before dense embedding — improves passage retrieval in RAG. Across five experiments we compare a
+dense baseline against coref-augmented indexing using automated coreference (`fastcoref` LingMess)
+and manual LLM-quality resolution, on paragraph- and sentence-level chunks from Wikipedia excerpts
+and public DAPR benchmarks.
+
+**Smaller chunks lose context.** Sentence-level chunking produces pronoun-only passages with no
+entity string for the retriever to match. On coref-critical questions, baseline Recall@5 was 0.77
+(100 chunks, Test 4) and 0.91 (414 chunks, Test 5) — well below paragraph-benchmark baselines
+where the entity is usually named in the same chunk (Tests 2–3).
+
+**LLM coref outperformed the neural coref model** on sentence-level evals: +17pp Recall@5 with
+zero regressions (Test 4) vs +5pp with 1 regression for LingMess (Test 1) and flat results on
+DAPR despite 77–89% pronoun reduction (Tests 2–3). LingMess rewrites often pointed to common
+nouns or duplicated text already in the passage, adding no retrieval signal.
+
+**Improvement is conditional, not universal.** At 414 sentence chunks (Test 5), dense-only coref
+stayed flat (0.93 → 0.93), but coref + hybrid fusion recovered hard pronoun queries (+10pp on
+critical Recall@5, 2 recovered / 1 hurt). Test 4's larger dense gain (+17pp) did not fully
+replicate at scale — baseline headroom and corpus size matter.
+
+**Bottom line:** Coref-before-embed is a valid technique for pronoun-only sentence chunks when
+resolution quality is high, but it is not a default ingestion step for paragraph-level RAG with a
+modern dense model.
 
 ---
 
@@ -29,7 +43,7 @@ with only a small hybrid gain (+3pp, 2 recovered / 1 hurt).
 | `test-2/coref_public_eval.ipynb` | **Test 2** — public benchmark (DAPR ConditionalQA). Automated coref is flat. |
 | `test-3/coref_public_eval_v3.ipynb` | **Test 3** — entity-rich Wikipedia (DAPR NaturalQuestions) + selective coref. Still flat. |
 | `test-4/coref_public_eval_v4.ipynb` | **Test 4** — manual (LLM) coref on sentence-level Apollo 11 chunks. Clear win (+17pp recall). |
-| `test-5/coref_public_eval_v5.ipynb` | **Test 5** — manual coref on sentence-level WW2 chunks (414 chunks). Dense flat; hybrid +3pp. |
+| `test-5/coref_public_eval_v5.ipynb` | **Test 5** — manual coref on sentence-level WW2 chunks (414 chunks). Dense flat; hybrid +3pp overall, +10pp on critical. |
 | `coref-rag-hypothesis-and-findings.md` | Full research write-up: hypothesis, all five tests, synthesis |
 | `test-*/test-*-findings.md` | Per-test detailed results |
 
@@ -53,7 +67,7 @@ with only a small hybrid gain (+3pp, 2 recovered / 1 hurt).
 | 2 | DAPR ConditionalQA (gov guidance) | LingMess (auto) | 8,093 para | 0.29 | baseline | 0.00 | ❌ Flat |
 | 3 | DAPR NaturalQuestions (Wikipedia) | Selective auto | 8,000 para | 0.80 | baseline | −0.01 | ❌ Flat |
 | 4 | Apollo 11 Wikipedia, sentence chunks | Manual (LLM) | 100 sent | 0.82 | coref_dense | **+0.17** | ✅ Win (N=30; did not replicate in Test 5) |
-| 5 | WW2 Wikipedia (~10k words), sentence chunks | Manual (LLM) | 414 sent | 0.93 | coref_hybrid | +0.03 | ⚠️ Flat dense; hybrid partial |
+| 5 | WW2 Wikipedia (~10k words), sentence chunks | Manual (LLM) | 414 sent | 0.93 | coref_hybrid | **+0.03** (crit **+0.10**) | ⚠️ Dense flat; hybrid improved critical queries |
 
 **Pattern:** Smaller chunks expose pronoun-only gold passages that hurt retrieval. LLM coref
 recovers that gap when baseline headroom exists (Test 4). LingMess on paragraph corpora does not
@@ -103,9 +117,10 @@ recall is already high — the improvement is real but conditional.
 
 - Test 4 (+17pp) is a **small micro-benchmark**: 100 chunks, 30 questions, 22 coref-critical,
   one document. ±1 query moves Recall@5 by ~3pp.
-- Test 5 **did not replicate** Test 4's dense gain with the same LLM coref approach.
-- Hybrid fusion (BM25 + dense) is unreliable: helps 2 queries in Test 5, hurts 1; worse than
-  pure coref_dense in Test 4.
+- Test 5 **did not replicate** Test 4's dense-only gain (0.93 → 0.93), but **did show improvement**
+  via coref_hybrid: critical recall 0.905 → 1.00 (2 Japan pronoun queries recovered), with 1 regression.
+- Hybrid fusion is mixed: it helped on hard pronoun queries in Test 5 but hurt one easy query; worse
+  than pure coref_dense in Test 4.
 - Paragraph-level RAG with a modern dense model does not need coref-before-embed as a default step.
 
 ---
@@ -141,10 +156,9 @@ LingMess reduced pronouns by 77–89% but retrieval stayed flat — wrong antece
 nouns), redundant rewrites, or entity already present in the chunk. On a pronoun-targeted stress
 test (Test 1), LingMess helped modestly (+5pp) but introduced 1 regression and grammar artifacts.
 
-**LLM coref did better on the sentence-level evals** (Test 4: +17pp, 0 regressions; Test 5:
-flat dense but also 0 regressions). Higher resolution quality and cleaner entity injection —
-but Test 5 proves that better coref alone does not guarantee better retrieval when the baseline
-is already strong.
+**LLM coref did better on the sentence-level evals** (Test 4: +17pp dense, 0 regressions; Test 5:
++10pp on critical questions via hybrid, 2 recovered / 1 hurt). Dense-only coref did not move Test 5
+metrics — improvement there required combining coref embeddings with BM25.
 
 **Practical guidance (conservative):**
 - If you chunk at sentence level, expect pronoun-only chunks to hurt retrieval — measure baseline

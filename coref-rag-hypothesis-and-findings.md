@@ -6,6 +6,28 @@
 `test-3/coref_public_eval_v3.ipynb` (Test 3), `test-4/coref_public_eval_v4.ipynb` (Test 4),
 `test-5/coref_public_eval_v5.ipynb` (Test 5)
 
+## Abstract
+
+We evaluate whether resolving coreference — rewriting pronouns to their antecedent entity names
+before dense embedding — improves passage retrieval in RAG. Across five experiments we compare a
+dense baseline against coref-augmented indexing using automated coreference (`fastcoref` LingMess)
+and manual LLM-quality resolution, on paragraph- and sentence-level chunks from Wikipedia excerpts
+and public DAPR benchmarks.
+
+Sentence-level chunking creates pronoun-only passages that lack entity strings for query matching.
+On coref-critical questions, baseline Recall@5 was 0.77 (100 chunks, Test 4) and 0.91 (414 chunks,
+Test 5). Paragraph benchmarks showed no comparable gap — entities are usually named in the same
+chunk — and LingMess coref (77–89% pronoun reduction) did not move retrieval metrics (Tests 2–3).
+
+LLM-based coref outperformed the neural coref model on targeted sentence-level evals: +17pp Recall@5
+with zero regressions (Test 4) vs +5pp with 1 regression for LingMess (Test 1). At scale, dense-only
+coref stayed flat (Test 5: 0.93 → 0.93), but coref + hybrid fusion recovered hard pronoun queries
+(+10pp critical Recall@5; 2 recovered, 1 hurt).
+
+The mechanism is real but conditional. Coref-before-embed helps when chunks are small, resolution
+quality is high, and baseline recall on pronoun-only gold passages is low. It is not a default win
+for paragraph-level RAG or for automated coref at public-benchmark scale.
+
 ---
 
 ## 1. Research Question
