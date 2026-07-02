@@ -8,30 +8,32 @@
 
 ## Abstract
 
-We evaluate whether resolving coreference — rewriting pronouns to their antecedent entity names
-before dense embedding — improves passage retrieval in RAG. Across five experiments we compare a
-dense baseline against coref-augmented indexing using automated coreference (`fastcoref` LingMess)
-and manual LLM-quality resolution, on paragraph- and sentence-level chunks from Wikipedia excerpts
-and public DAPR benchmarks.
+When you build a search system over documents, you split text into chunks and index them. If a
+chunk says *"He resigned in 1971"* but someone searches for *"Armstrong"*, the search may fail —
+because the name isn't in the chunk. **Coreference resolution** fixes this by replacing pronouns
+with the names they refer to before indexing.
 
-**Smaller chunks lose context.** Sentence-level chunking produces pronoun-only passages with no
-entity string for the retriever to match. On coref-critical questions, baseline Recall@5 was 0.77
-(100 chunks, Test 4) and 0.91 (414 chunks, Test 5) — well below paragraph-benchmark baselines
-where the entity is usually named in the same chunk (Tests 2–3).
+We ran five tests to see if that actually helps retrieval.
 
-**LLM coref outperformed the neural coref model** on sentence-level evals: +17pp Recall@5 with
-zero regressions (Test 4) vs +5pp with 1 regression for LingMess (Test 1) and flat results on
-DAPR despite 77–89% pronoun reduction (Tests 2–3). LingMess rewrites often pointed to common
-nouns or duplicated text already in the passage, adding no retrieval signal.
+**Small chunks are the main problem.** When you split text one sentence at a time, many chunks
+only contain *he*, *it*, or *they* — the name was in a previous sentence and got left behind.
+On questions where this matters, search missed roughly 1 in 4 answers on a small document (Test 4)
+and about 1 in 10 on a larger one (Test 5). With normal paragraph-sized chunks, the name is usually
+still in the same chunk, so the problem barely shows up (Tests 2–3).
 
-**Improvement is conditional, not universal.** At 414 sentence chunks (Test 5), dense-only coref
-stayed flat (0.93 → 0.93), but coref + hybrid fusion recovered hard pronoun queries (+10pp on
-critical Recall@5, 2 recovered / 1 hurt). Test 4's larger dense gain (+17pp) did not fully
-replicate at scale — baseline headroom and corpus size matter.
+**LLM-based coref worked better than an automated coref model.** An off-the-shelf model (LingMess)
+barely helped — it removed pronouns but often rewrote them to generic words already in the sentence,
+or the entity was already there anyway. LLM-quality rewrites gave clearer gains on small sentence
+chunks (Test 4: search found almost all the hard questions it had been missing) and caused no
+wrong answers. The automated model only showed a small improvement on a tiny custom test (Test 1).
 
-**Bottom line:** Coref-before-embed is a valid technique for pronoun-only sentence chunks when
-resolution quality is high, but it is not a default ingestion step for paragraph-level RAG with a
-modern dense model.
+**It doesn't always help.** On a larger document with the same LLM rewrites (Test 5), search was
+already good enough that rewriting alone changed nothing. Combining rewritten text with keyword
+search recovered a couple of remaining hard cases, but broke one easy one.
+
+**Bottom line:** Replacing pronouns with names before indexing is a real fix for sentence-level
+chunking — if you use high-quality resolution and check that search is actually failing on
+pronoun-only chunks first. For normal paragraph-sized chunks, it's probably not worth the effort.
 
 ---
 
