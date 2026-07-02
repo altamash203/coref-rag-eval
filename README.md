@@ -2,6 +2,10 @@
 
 **Does resolving coreference (pronouns → entity names) before embedding improve retrieval?**
 
+- **Coref:** replacing pronouns (*he*, *it*, *they*) with the entity they refer to (*Armstrong*, *Apollo 11*, *the Allies*) before indexing.
+- **The problem:** a dense retriever matches on what's in the chunk — if the chunk says *"he resigned"* but the query says *"Armstrong"*, there is no shared entity string to match on.
+- **Small chunks lose context:** at sentence level, the antecedent (*"Armstrong joined NASA in 1962"*) lives in a different chunk, so *"He resigned in 1971"* has no entity name left in it.
+
 This repo tests a simple idea: if a passage says *"he won the Nobel Prize"* instead of
 *"Marie Curie won the Nobel Prize,"* a dense retriever might miss it when you search for
 "Marie Curie." So we rewrite pronouns to entity names before embedding — and measure whether
