@@ -1,0 +1,272 @@
+[
+  {
+    "q_id": 1,
+    "question": "What title did Hitler proclaim for himself after Hindenburg died in 1934?",
+    "gold_chunk_ids": [
+      52
+    ],
+    "coref_critical": false,
+    "note": "Original chunk 52 already names Hitler; 'himself' is reflexive, not a missing antecedent."
+  },
+  {
+    "q_id": 2,
+    "question": "What was Franco's largest collaboration with Germany during World War II?",
+    "gold_chunk_ids": [
+      81
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 81 uses 'His largest collaboration' — 'His' = Franco."
+  },
+  {
+    "q_id": 3,
+    "question": "How did Chiang Kai-shek defend Shanghai against Japan in 1937?",
+    "gold_chunk_ids": [
+      85
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 85 uses 'his best army' — 'his' = Chiang Kai-shek."
+  },
+  {
+    "q_id": 4,
+    "question": "Why was Hitler furious after the Munich Agreement despite Germany's demands being satisfied?",
+    "gold_chunk_ids": [
+      100
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 100 uses 'him' and 'he' referring to Hitler; 'British interference had prevented him from seizing all of Czechoslovakia'."
+  },
+  {
+    "q_id": 5,
+    "question": "Why did Hitler delay the attack on Poland scheduled for 26 August 1939?",
+    "gold_chunk_ids": [
+      112
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 112 uses 'he decided to delay it' — 'he' = Hitler, 'it' = the attack."
+  },
+  {
+    "q_id": 6,
+    "question": "What did Ribbentrop tell the British ambassador about Poland on 30–31 August 1939?",
+    "gold_chunk_ids": [
+      116
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 116 uses 'handed him' — 'him' = Nevile Henderson (British ambassador)."
+  },
+  {
+    "q_id": 7,
+    "question": "What happened to the Polish counter-offensive against the German advance in September 1939?",
+    "gold_chunk_ids": [
+      124
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 124 uses 'it was outflanked' — 'it' = the Polish counter-offensive."
+  },
+  {
+    "q_id": 8,
+    "question": "Who replaced Neville Chamberlain as British Prime Minister after the Norwegian campaign?",
+    "gold_chunk_ids": [
+      145
+    ],
+    "coref_critical": false,
+    "note": "Original chunk 145 already names both Chamberlain and Churchill."
+  },
+  {
+    "q_id": 9,
+    "question": "When did Paris fall to German forces during the 1940 invasion of France?",
+    "gold_chunk_ids": [
+      152
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 152 uses 'Paris fell to them' — 'them' = the Germans."
+  },
+  {
+    "q_id": 10,
+    "question": "Why was the planned German invasion of Britain postponed indefinitely?",
+    "gold_chunk_ids": [
+      156
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 156 uses 'its failure' — 'its' = the German campaign for air superiority."
+  },
+  {
+    "q_id": 11,
+    "question": "What did Roosevelt call for the United States to become in December 1940?",
+    "gold_chunk_ids": [
+      164
+    ],
+    "coref_critical": false,
+    "note": "Fixed chunk 164 contains Roosevelt and the 'arsenal of democracy' quote explicitly."
+  },
+  {
+    "q_id": 12,
+    "question": "Who led the Afrika Korps offensive that drove back Commonwealth forces in North Africa?",
+    "gold_chunk_ids": [
+      178
+    ],
+    "coref_critical": false,
+    "note": "Original chunk 178 names Erwin Rommel and the Afrika Korps explicitly."
+  },
+  {
+    "q_id": 13,
+    "question": "When did Germany launch Operation Barbarossa against the Soviet Union?",
+    "gold_chunk_ids": [
+      195
+    ],
+    "coref_critical": false,
+    "note": "Original chunk 195 names Operation Barbarossa and the date; secondary pronouns only."
+  },
+  {
+    "q_id": 14,
+    "question": "Why did the Axis campaign on the Eastern Front fail to achieve its main objectives despite territorial gains?",
+    "gold_chunk_ids": [
+      210
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 210 uses 'their campaign' and 'its main objectives' — both refer to the Axis campaign."
+  },
+  {
+    "q_id": 15,
+    "question": "What did the Dutch government agree to provide Japan from the Dutch East Indies?",
+    "gold_chunk_ids": [
+      225
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 225 uses 'their resources' — 'their' = Dutch East Indies resources."
+  },
+  {
+    "q_id": 16,
+    "question": "What dilemma did Japan face regarding China versus Southeast Asian resources in late 1941?",
+    "gold_chunk_ids": [
+      243
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 243 uses 'its ambitions' and 'it needed' — 'its/it' = Japan."
+  },
+  {
+    "q_id": 17,
+    "question": "How did early Japanese victories in the Pacific affect Japanese military planning?",
+    "gold_chunk_ids": [
+      269
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 269 uses 'left it overconfident' — 'it' = Japan."
+  },
+  {
+    "q_id": 18,
+    "question": "How did Hitler respond when the French colony in North Africa joined the Allies?",
+    "gold_chunk_ids": [
+      302
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 302 uses 'they did not resist' and 'they managed to scuttle their fleet' — 'they/their' = Vichy forces."
+  },
+  {
+    "q_id": 19,
+    "question": "What happened to the German Ardennes counter-offensive by 16 January 1945?",
+    "gold_chunk_ids": [
+      365
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 365 uses 'this offensive' — refers to the Battle of the Bulge / Ardennes counter-offensive."
+  },
+  {
+    "q_id": 20,
+    "question": "Who succeeded President Roosevelt after his death in April 1945?",
+    "gold_chunk_ids": [
+      380
+    ],
+    "coref_critical": true,
+    "note": "Fixed chunk 380 uses 'his vice president' — 'his' = Roosevelt. Names Truman explicitly."
+  },
+  {
+    "q_id": 21,
+    "question": "How did the submarine blockade affect Japan's economy in 1945?",
+    "gold_chunk_ids": [
+      398
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 398 uses 'its economy' and 'its ability' — 'its' = Japan."
+  },
+  {
+    "q_id": 22,
+    "question": "What persuaded Imperial Army leaders to accept Japan's surrender terms?",
+    "gold_chunk_ids": [
+      405
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 405 uses 'These two events' — atomic bombings and Soviet invasion of Manchuria."
+  },
+  {
+    "q_id": 23,
+    "question": "How were Austria and Germany administered after the Allied victory?",
+    "gold_chunk_ids": [
+      410
+    ],
+    "coref_critical": false,
+    "note": "Original chunk 410 names Austria and Germany directly."
+  },
+  {
+    "q_id": 24,
+    "question": "Where were Japan's Pacific advances halted in June 1942?",
+    "gold_chunk_ids": [
+      15
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 15 uses 'its advances' — 'its' = Japan."
+  },
+  {
+    "q_id": 25,
+    "question": "What happened to Italy's fascist regime after the Allied invasion in July 1943?",
+    "gold_chunk_ids": [
+      17
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 17 uses 'its fascist regime' — 'its' = Italy."
+  },
+  {
+    "q_id": 26,
+    "question": "How much territory did Germany lose under the Treaty of Versailles?",
+    "gold_chunk_ids": [
+      45
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 45 uses 'its home territory', 'its overseas possessions', 'the country's armed forces' — all refer to Germany."
+  },
+  {
+    "q_id": 27,
+    "question": "What military support did Italy provide to Franco during the Spanish Civil War?",
+    "gold_chunk_ids": [
+      76
+    ],
+    "coref_critical": false,
+    "note": "Original chunk 76 names Mussolini and quantifies Italian troops and aircraft sent to Spain."
+  },
+  {
+    "q_id": 28,
+    "question": "When did Japan sign a Neutrality Pact with the Soviet Union and what doctrine did Japan adopt afterward?",
+    "gold_chunk_ids": [
+      94
+    ],
+    "coref_critical": true,
+    "note": "Original chunk 94 uses 'its focus' — 'its' = Japan's naval doctrine (Nanshin-ron)."
+  },
+  {
+    "q_id": 29,
+    "question": "What were Hitler's objectives in invading the Soviet Union?",
+    "gold_chunk_ids": [
+      197
+    ],
+    "coref_critical": false,
+    "note": "Original chunk 197 already names Hitler explicitly in 'Hitler's objectives'."
+  },
+  {
+    "q_id": 30,
+    "question": "How many Soviet POWs died in German captivity by the end of winter 1941?",
+    "gold_chunk_ids": [
+      201
+    ],
+    "coref_critical": false,
+    "note": "Original chunk 201 states '2.8 million Soviet POWs had died in German captivity' explicitly."
+  }
+]

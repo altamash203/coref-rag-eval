@@ -1,0 +1,212 @@
+[
+  {
+    "q_id": 1,
+    "question": "Who joined Armstrong on the lunar surface 19 minutes after he stepped out?",
+    "gold_chunk_ids": [4],
+    "coref_critical": true,
+    "note": "Original chunk 4 says 'Aldrin joined him' — 'him' = Armstrong. Query names Armstrong explicitly."
+  },
+  {
+    "q_id": 2,
+    "question": "What did Armstrong and Aldrin name the landing site?",
+    "gold_chunk_ids": [5, 8],
+    "coref_critical": true,
+    "note": "Original chunk 5 uses 'They' and 'they' for Armstrong/Aldrin."
+  },
+  {
+    "q_id": 3,
+    "question": "What was Michael Collins doing while Armstrong and Aldrin were on the Moon's surface?",
+    "gold_chunk_ids": [7, 46],
+    "coref_critical": true,
+    "note": "Original chunk 7 uses 'they' for Armstrong/Aldrin. Chunk 46 already names them."
+  },
+  {
+    "q_id": 4,
+    "question": "How did Armstrong describe his first step on the Moon?",
+    "gold_chunk_ids": [18],
+    "coref_critical": true,
+    "note": "Original chunk 18 uses 'He described' — 'He' = Armstrong."
+  },
+  {
+    "q_id": 5,
+    "question": "What did President Nixon say about the phone call with Armstrong and Aldrin?",
+    "gold_chunk_ids": [21],
+    "coref_critical": true,
+    "note": "Original chunk 21 uses 'He congratulated them' — 'He' = Nixon, 'them' = Armstrong/Aldrin."
+  },
+  {
+    "q_id": 6,
+    "question": "What award did Nixon give to Armstrong, Aldrin, and Collins?",
+    "gold_chunk_ids": [25],
+    "coref_critical": false,
+    "note": "Original chunk 25 says 'three astronauts' — coref version adds explicit names."
+  },
+  {
+    "q_id": 7,
+    "question": "What was Armstrong's career before joining NASA?",
+    "gold_chunk_ids": [28, 29],
+    "coref_critical": true,
+    "note": "Original chunk 28 uses 'He was a naval aviator' — 'He' = Armstrong."
+  },
+  {
+    "q_id": 8,
+    "question": "When did Armstrong resign from NASA and what did he do after?",
+    "gold_chunk_ids": [31],
+    "coref_critical": true,
+    "note": "Original chunk 31 uses 'he resigned' — 'he' = Armstrong."
+  },
+  {
+    "q_id": 9,
+    "question": "How did Armstrong's doctoral thesis contribute to NASA?",
+    "gold_chunk_ids": [36],
+    "coref_critical": true,
+    "note": "Trick question — this is actually Aldrin's thesis. Tests whether retrieval correctly returns Aldrin's chunk (36) rather than an Armstrong chunk. Original uses 'His' = Aldrin."
+  },
+  {
+    "q_id": 10,
+    "question": "What is the Aldrin cycler?",
+    "gold_chunk_ids": [41],
+    "coref_critical": true,
+    "note": "Original chunk 41 uses 'He developed' — 'He' = Aldrin."
+  },
+  {
+    "q_id": 11,
+    "question": "Where was Michael Collins born?",
+    "gold_chunk_ids": [42],
+    "coref_critical": false,
+    "note": "Original chunk 42 already names Collins. But 'his father' → coref resolves to 'Collins's father'."
+  },
+  {
+    "q_id": 12,
+    "question": "Did Collins feel lonely orbiting the Moon alone?",
+    "gold_chunk_ids": [47],
+    "coref_critical": true,
+    "note": "Original chunk 47 uses 'He later wrote that he felt' — both 'he' = Collins."
+  },
+  {
+    "q_id": 13,
+    "question": "What role did Collins take after leaving NASA?",
+    "gold_chunk_ids": [48, 49],
+    "coref_critical": true,
+    "note": "Chunk 49 original uses 'He served in that role' — 'He' = Collins, 'that role' = director of Air and Space Museum."
+  },
+  {
+    "q_id": 14,
+    "question": "How tall was the Saturn V rocket and how much did it weigh?",
+    "gold_chunk_ids": [52],
+    "coref_critical": true,
+    "note": "Original chunk 52 uses 'It stood 363 feet' — 'It' = Saturn V."
+  },
+  {
+    "q_id": 15,
+    "question": "What fuel did the Saturn V's F-1 engines burn?",
+    "gold_chunk_ids": [54],
+    "coref_critical": true,
+    "note": "Original chunk 54 uses 'These engines' — coref resolves to 'The F-1 engines'."
+  },
+  {
+    "q_id": 16,
+    "question": "How long did the S-II second stage provide thrust?",
+    "gold_chunk_ids": [56],
+    "coref_critical": true,
+    "note": "Original chunk 56 uses 'It provided thrust' — 'It' = S-II stage."
+  },
+  {
+    "q_id": 17,
+    "question": "What were the 1202 and 1201 program alarms during Apollo 11's landing?",
+    "gold_chunk_ids": [64, 65],
+    "coref_critical": false,
+    "note": "Both original chunks name the alarms explicitly. Tests basic retrieval."
+  },
+  {
+    "q_id": 18,
+    "question": "How much fuel was left when Eagle landed on the Moon?",
+    "gold_chunk_ids": [67],
+    "coref_critical": false,
+    "note": "Original chunk names Eagle directly."
+  },
+  {
+    "q_id": 19,
+    "question": "Who deployed the slow-scan television camera that filmed the Moon landing?",
+    "gold_chunk_ids": [83],
+    "coref_critical": true,
+    "note": "Original chunk 83 uses 'The camera was deployed by Armstrong as he descended the ladder, providing live footage of his first steps' — 'he/his' = Armstrong."
+  },
+  {
+    "q_id": 20,
+    "question": "Which tracking stations in Australia received the Apollo 11 television signal?",
+    "gold_chunk_ids": [84],
+    "coref_critical": false,
+    "note": "Original chunk names the stations. Basic retrieval test."
+  },
+  {
+    "q_id": 21,
+    "question": "Who performed the docking maneuver to reconnect Eagle with Columbia?",
+    "gold_chunk_ids": [88],
+    "coref_critical": false,
+    "note": "Original chunk names Collins directly."
+  },
+  {
+    "q_id": 22,
+    "question": "What happened to Eagle after the crew transferred back to Columbia?",
+    "gold_chunk_ids": [89],
+    "coref_critical": true,
+    "note": "Original chunk 89 uses 'its orbit eventually decayed, causing it to crash' — 'its/it' = Eagle."
+  },
+  {
+    "q_id": 23,
+    "question": "At what speed did Columbia re-enter Earth's atmosphere?",
+    "gold_chunk_ids": [92],
+    "coref_critical": false,
+    "note": "Original chunk names Columbia. Straightforward retrieval."
+  },
+  {
+    "q_id": 24,
+    "question": "What did analysis of the Apollo 11 lunar samples reveal about the Moon's origin?",
+    "gold_chunk_ids": [80],
+    "coref_critical": true,
+    "note": "Original chunk 80 uses 'these samples' — coref resolves to 'the lunar samples'."
+  },
+  {
+    "q_id": 25,
+    "question": "How many countries did Armstrong, Aldrin, and Collins visit on the Giant Leap tour?",
+    "gold_chunk_ids": [96],
+    "coref_critical": true,
+    "note": "Original chunk 96 says 'the three astronauts embarked' — coref adds explicit names."
+  },
+  {
+    "q_id": 26,
+    "question": "What did Aldrin study for his doctoral degree?",
+    "gold_chunk_ids": [35, 36],
+    "coref_critical": true,
+    "note": "Original chunk 35 uses 'He graduated' and chunk 36 uses 'His doctoral thesis' — both 'He/His' = Aldrin."
+  },
+  {
+    "q_id": 27,
+    "question": "How did Armstrong avoid public life after Apollo 11?",
+    "gold_chunk_ids": [32],
+    "coref_critical": true,
+    "note": "Original chunk 32 uses 'He avoided publicity' — 'He' = Armstrong."
+  },
+  {
+    "q_id": 28,
+    "question": "When and how did Collins die?",
+    "gold_chunk_ids": [50],
+    "coref_critical": false,
+    "note": "Original chunk names Collins directly."
+  },
+  {
+    "q_id": 29,
+    "question": "What did Apollo 11 demonstrate about humanity's capabilities?",
+    "gold_chunk_ids": [98],
+    "coref_critical": true,
+    "note": "Original chunk 98 uses 'it demonstrated' — 'it' = Apollo 11's legacy."
+  },
+  {
+    "q_id": 30,
+    "question": "Where is the command module Columbia displayed today?",
+    "gold_chunk_ids": [100],
+    "coref_critical": true,
+    "note": "Original chunk 100 uses 'where it has been seen' — 'it' = Columbia."
+  }
+]
