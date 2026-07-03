@@ -1,0 +1,212 @@
+[
+  {
+    "q_id": 1,
+    "question": "How many Deep South slave states seceded after Lincoln won the 1860 election?",
+    "gold_chunk_ids": [46],
+    "coref_critical": true,
+    "note": "Gold chunk 46 answers with 'His victory triggered declarations of secession by seven slave states of the Deep South' — original uses 'His' for Lincoln (named in chunk 45)."
+  },
+  {
+    "q_id": 2,
+    "question": "What do historians disagree about regarding the North's response to secession?",
+    "gold_chunk_ids": [33],
+    "coref_critical": true,
+    "note": "Gold chunk 33 opens 'They disagree on the North's reasons...' — original uses 'They' for historians (chunk 32)."
+  },
+  {
+    "q_id": 3,
+    "question": "Why was there a sectional balance in the Senate but not the House of Representatives?",
+    "gold_chunk_ids": [38],
+    "coref_critical": true,
+    "note": "Gold chunk 38 opens 'This had kept a sectional balance...' — original uses 'This' for admitting states in pairs (chunk 37)."
+  },
+  {
+    "q_id": 4,
+    "question": "What caused the capture of Atlanta and the March to the Sea in 1864?",
+    "gold_chunk_ids": [17],
+    "coref_critical": true,
+    "note": "Gold chunk 17 opens 'This led to the fall of Atlanta...' — original uses 'This' for the Union's multi-front offensive (chunk 16)."
+  },
+  {
+    "q_id": 5,
+    "question": "Which four states seceded shortly after Lincoln's May 1861 call for volunteers?",
+    "gold_chunk_ids": [121],
+    "coref_critical": true,
+    "note": "Gold chunk 121 opens 'Shortly after this, Virginia, Tennessee, Arkansas, and North Carolina seceded' — original uses 'this' for Lincoln's volunteer call (chunk 120)."
+  },
+  {
+    "q_id": 6,
+    "question": "What complaints about Northern states did South Carolina's secession declaration make?",
+    "gold_chunk_ids": [55],
+    "coref_critical": true,
+    "note": "Gold chunk 55 opens 'It argued for states' rights...' — original uses 'It' for the secession declaration (chunk 54)."
+  },
+  {
+    "q_id": 7,
+    "question": "How much resistance did the seceding states meet when they seized federal forts under Buchanan?",
+    "gold_chunk_ids": [62],
+    "coref_critical": true,
+    "note": "Gold chunk 62 opens 'They took control of federal forts...' — original uses 'They' for the seceded states (chunk 61)."
+  },
+  {
+    "q_id": 8,
+    "question": "What did Buchanan say about the power to force a state to stay in the Union?",
+    "gold_chunk_ids": [64],
+    "coref_critical": true,
+    "note": "Gold chunk 64 opens 'He added, however...' — original uses 'He' for Buchanan (chunk 63)."
+  },
+  {
+    "q_id": 9,
+    "question": "What did Lincoln say about collecting duties and imposts in his first inaugural address?",
+    "gold_chunk_ids": [87],
+    "coref_critical": true,
+    "note": "Gold chunk 87 opens 'He stated that it would be US policy...' — original uses 'He' for Lincoln."
+  },
+  {
+    "q_id": 10,
+    "question": "How did Lincoln close his first inaugural address?",
+    "gold_chunk_ids": [88],
+    "coref_critical": true,
+    "note": "Gold chunk 88 opens 'His speech closed with a plea...' — original uses 'His' for Lincoln."
+  },
+  {
+    "q_id": 11,
+    "question": "What did Seward think of Lincoln early in his presidency?",
+    "gold_chunk_ids": [94],
+    "coref_critical": true,
+    "note": "Gold chunk 94 says 'Seward held little regard for him, due to his perceived inexperience' — 'him'/'his' = Lincoln."
+  },
+  {
+    "q_id": 12,
+    "question": "Who commanded the Fort Sumter garrison before the war began?",
+    "gold_chunk_ids": [101],
+    "coref_critical": true,
+    "note": "Gold chunk 101 says 'reinforcing its garrison, commanded by Major Robert Anderson' — 'its' = Fort Sumter (chunk 99/100)."
+  },
+  {
+    "q_id": 13,
+    "question": "What happened to Fort Sumter after the Confederate bombardment began on April 12?",
+    "gold_chunk_ids": [117],
+    "coref_critical": true,
+    "note": "Gold chunk 117 says 'it fell the next day' — 'it' = the fort (Fort Sumter)."
+  },
+  {
+    "q_id": 14,
+    "question": "What did Maryland's anti-Lincoln officials tolerate in Baltimore?",
+    "gold_chunk_ids": [126],
+    "coref_critical": true,
+    "note": "Gold chunk 126 opens 'It had anti-Lincoln officials...' — 'It' = Maryland (chunk 125)."
+  },
+  {
+    "q_id": 15,
+    "question": "How did Frank Key Howard's book describe conditions at Fort Lafayette?",
+    "gold_chunk_ids": [134],
+    "coref_critical": true,
+    "note": "Gold chunk 134 opens 'It \"stressed the crowded conditions...\"' — 'It' = Howard's book (chunk 133)."
+  },
+  {
+    "q_id": 16,
+    "question": "What happened to Kentucky's neutrality in 1861?",
+    "gold_chunk_ids": [140],
+    "coref_critical": true,
+    "note": "Gold chunk 140 says 'its neutrality ended and the state reaffirmed its Union status' — 'its' = Kentucky (chunk 139)."
+  },
+  {
+    "q_id": 17,
+    "question": "What became of the Confederate Government of Kentucky after October 1862?",
+    "gold_chunk_ids": [142],
+    "coref_critical": true,
+    "note": "Gold chunk 142 opens 'Its jurisdiction extended... it went into exile' — 'Its'/'it' = the Confederate Government of Kentucky (chunk 141)."
+  },
+  {
+    "q_id": 18,
+    "question": "What happened to the East Tennessee men suspected of Union loyalty?",
+    "gold_chunk_ids": [148],
+    "coref_critical": true,
+    "note": "Gold chunk 148 says '...arrested over 3,000 men...; they were held without trial' — 'they' = the arrested men."
+  },
+  {
+    "q_id": 19,
+    "question": "How were captives treated under the early Civil War parole system before being exchanged?",
+    "gold_chunk_ids": [182],
+    "coref_critical": true,
+    "note": "Gold chunk 182 opens 'They were held in camps run by their army...' — 'They' = the paroled captives (chunk 181)."
+  },
+  {
+    "q_id": 20,
+    "question": "How did Jennie Hodgers live after the war until her death in 1915?",
+    "gold_chunk_ids": [190],
+    "coref_critical": true,
+    "note": "Gold chunk 190 opens 'After she returned to civilian life, she continued to live as a man...' — 'she' = Jennie Hodgers (chunk 189)."
+  },
+  {
+    "q_id": 21,
+    "question": "What was the Union Navy's mission during the war?",
+    "gold_chunk_ids": [215],
+    "coref_critical": true,
+    "note": "Gold chunk 215 opens 'Its mission was to blockade Confederate ports...' — 'Its' = the Union Navy (chunk 214)."
+  },
+  {
+    "q_id": 22,
+    "question": "What happened to the Missouri militia that Governor Jackson called out?",
+    "gold_chunk_ids": [136],
+    "coref_critical": true,
+    "note": "Gold chunk 136 says 'it was attacked by federal forces under General Nathaniel Lyon' — 'it' = the state militia."
+  },
+  {
+    "q_id": 23,
+    "question": "Who won the 1860 US presidential election?",
+    "gold_chunk_ids": [4],
+    "coref_critical": false,
+    "note": "Gold chunk 4 names Abraham Lincoln explicitly."
+  },
+  {
+    "q_id": 24,
+    "question": "When and where did the American Civil War start?",
+    "gold_chunk_ids": [7],
+    "coref_critical": false,
+    "note": "Gold chunk 7 names the date and Fort Sumter explicitly."
+  },
+  {
+    "q_id": 25,
+    "question": "What did the Emancipation Proclamation declare?",
+    "gold_chunk_ids": [12],
+    "coref_critical": false,
+    "note": "Gold chunk 12 names Lincoln and the Emancipation Proclamation explicitly."
+  },
+  {
+    "q_id": 26,
+    "question": "What happened to Lee's army at the Battle of Gettysburg?",
+    "gold_chunk_ids": [14],
+    "coref_critical": false,
+    "note": "Gold chunk 14 names Lee and Gettysburg explicitly."
+  },
+  {
+    "q_id": 27,
+    "question": "Where did Lee surrender to Grant in 1865?",
+    "gold_chunk_ids": [19],
+    "coref_critical": false,
+    "note": "Gold chunk 19 names Lee, Grant, and Appomattox Court House explicitly."
+  },
+  {
+    "q_id": 28,
+    "question": "Who did Jefferson Davis order to capture Fort Sumter?",
+    "gold_chunk_ids": [116],
+    "coref_critical": false,
+    "note": "Gold chunk 116 names Davis and General P. G. T. Beauregard explicitly."
+  },
+  {
+    "q_id": 29,
+    "question": "Which woman received the Medal of Honor for Civil War service?",
+    "gold_chunk_ids": [188],
+    "coref_critical": false,
+    "note": "Gold chunk 188 names Mary Edwards Walker explicitly."
+  },
+  {
+    "q_id": 30,
+    "question": "What was the goal of General Winfield Scott's Anaconda Plan?",
+    "gold_chunk_ids": [229],
+    "coref_critical": false,
+    "note": "Gold chunk 229 names Winfield Scott and the Anaconda Plan explicitly."
+  }
+]

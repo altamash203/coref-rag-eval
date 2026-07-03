@@ -1,0 +1,212 @@
+[
+  {
+    "q_id": 1,
+    "question": "What happened to the Anglo-French War's debt after the war ended?",
+    "gold_chunk_ids": [35],
+    "coref_critical": true,
+    "note": "Original chunk 35 uses 'it ended' and 'its debt' — 'it/its' = the Anglo-French War (chunk 34)."
+  },
+  {
+    "q_id": 2,
+    "question": "What did activists organise regional meetings, petitions, and literature in support of?",
+    "gold_chunk_ids": [50],
+    "coref_critical": true,
+    "note": "Original chunk 50 says 'in support of these demands' — 'these demands' = doubling Third Estate representation and individual voting (chunk 46)."
+  },
+  {
+    "q_id": 3,
+    "question": "What shaped the response of the educated French public to the crisis?",
+    "gold_chunk_ids": [28],
+    "coref_critical": true,
+    "note": "Original chunk 28 uses 'These shaped the response' — refers to Enlightenment critiques (chunk 26) and American Revolution/1780s revolts debates (chunk 27)."
+  },
+  {
+    "q_id": 4,
+    "question": "Who had been joined by more than 100 members of the clergy by 19 June 1789?",
+    "gold_chunk_ids": [66],
+    "coref_critical": true,
+    "note": "Original chunk 66 uses 'they had been joined' — 'they' = the National Assembly (self-declared by the Third Estate in chunk 65)."
+  },
+  {
+    "q_id": 5,
+    "question": "What prompted the king to agree to present a reform package personally to the Estates-General?",
+    "gold_chunk_ids": [67],
+    "coref_critical": true,
+    "note": "Original chunk 67 uses 'Shaken by this challenge to his authority' — 'this challenge' = the Third Estate's declaration of itself as the National Assembly (chunk 65)."
+  },
+  {
+    "q_id": 6,
+    "question": "What caused crowds of protestors to fill the streets of Paris on 12 July 1789?",
+    "gold_chunk_ids": [78],
+    "coref_critical": true,
+    "note": "Original chunk 78 uses 'The news brought crowds...' — refers to rumours the king planned to use the Swiss Guards to close the Assembly (chunk 77)."
+  },
+  {
+    "q_id": 7,
+    "question": "Who funded reactionary forces within France and urged foreign monarchs to back a counter-revolution?",
+    "gold_chunk_ids": [93],
+    "coref_critical": true,
+    "note": "Original chunk 93 uses 'These émigrés' — refers to the nobility who fled abroad (chunk 92)."
+  },
+  {
+    "q_id": 8,
+    "question": "Whose governor surrendered after several hours of fighting on 14 July 1789?",
+    "gold_chunk_ids": [80],
+    "coref_critical": true,
+    "note": "Original chunk 80 uses 'Its governor, Bernard-René de Launay' — 'Its' = the Bastille (chunk 79)."
+  },
+  {
+    "q_id": 9,
+    "question": "On whose advice did Louis dismiss Necker again as chief minister on 11 July?",
+    "gold_chunk_ids": [76],
+    "coref_critical": true,
+    "note": "Original chunk 76 uses 'On their advice' — 'their' = Marie Antoinette and the Comte d'Artois (chunk 75)."
+  },
+  {
+    "q_id": 10,
+    "question": "Which soldiers joined the crowd attacking the Bastille on 14 July?",
+    "gold_chunk_ids": [79],
+    "coref_critical": true,
+    "note": "Original chunk 79 uses 'many of these soldiers' — refers to the Gardes Françaises (chunk 78)."
+  },
+  {
+    "q_id": 11,
+    "question": "How did the radical press describe the banquet welcoming the Flanders Regiment?",
+    "gold_chunk_ids": [111],
+    "coref_critical": true,
+    "note": "Original chunk 111 uses 'described this as a gluttonous orgy' — 'this' = the banquet welcoming the Flanders Regiment (chunk 110)."
+  },
+  {
+    "q_id": 12,
+    "question": "Who marched on Versailles and entered the Assembly to present their demands on 5 October 1789?",
+    "gold_chunk_ids": [113],
+    "coref_critical": true,
+    "note": "Original chunk 113 uses 'some 7,000 of them marched...they entered' — 'them/they' = the women assembled outside the Hôtel de Ville (chunk 112)."
+  },
+  {
+    "q_id": 13,
+    "question": "What did the Catholic Church provide in return for the tithes it collected?",
+    "gold_chunk_ids": [125],
+    "coref_critical": true,
+    "note": "Original chunk 125 uses 'In return, it provided...' — 'it' = the Catholic Church (chunk 124)."
+  },
+  {
+    "q_id": 14,
+    "question": "What stiffened popular resistance against state interference in Catholic areas such as the Vendée?",
+    "gold_chunk_ids": [133],
+    "coref_critical": true,
+    "note": "Original chunk 133 uses 'This stiffened popular resistance' — 'This' = the split in the church over the loyalty oath (chunk 132)."
+  },
+  {
+    "q_id": 15,
+    "question": "Where was the conflict over legitimate authority less obvious than in the provinces?",
+    "gold_chunk_ids": [137],
+    "coref_critical": true,
+    "note": "Original chunk 137 uses 'This was less obvious in Paris' — 'This' = the conflict over legitimate authority (chunk 136)."
+  },
+  {
+    "q_id": 16,
+    "question": "Who opposed the criteria for 'active citizens' alongside Jean-Paul Marat?",
+    "gold_chunk_ids": [140],
+    "coref_critical": true,
+    "note": "Original chunk 140 uses 'He and Jean-Paul Marat opposed...' — 'He' = Maximilien Robespierre (chunk 139)."
+  },
+  {
+    "q_id": 17,
+    "question": "Which of the external players competing for power was the Jacobin club considered one of the most significant among?",
+    "gold_chunk_ids": [144],
+    "coref_critical": true,
+    "note": "Original chunk 144 uses 'One of the most significant was the Jacobin club' — 'these' (external players) = the Paris Commune and National Guard (chunk 143)."
+  },
+  {
+    "q_id": 18,
+    "question": "What oath did a new decree say could not be retracted without it being considered abdication?",
+    "gold_chunk_ids": [155],
+    "coref_critical": true,
+    "note": "Original chunk 155 uses 'retracting this oath' — 'this oath' = the oath of allegiance to the constitution (chunk 154)."
+  },
+  {
+    "q_id": 19,
+    "question": "What campaign did Brissot accompany his portrayal of Louis as opposed to reform with?",
+    "gold_chunk_ids": [177],
+    "coref_critical": true,
+    "note": "Original chunk 177 uses 'Brissot accompanied this with a campaign...' — 'this' = the portrayal of Louis as opposed to reform (chunk 176)."
+  },
+  {
+    "q_id": 20,
+    "question": "What reflected a genuine belief in exporting political liberty despite exploiting popular anti-Austrianism?",
+    "gold_chunk_ids": [178],
+    "coref_critical": true,
+    "note": "Original chunk 178 uses 'it reflected a genuine belief...' — 'it' = the campaign for war against Austria and Prussia (chunk 177)."
+  },
+  {
+    "q_id": 21,
+    "question": "What victory emboldened the Convention to replace the monarchy with the French First Republic?",
+    "gold_chunk_ids": [197],
+    "coref_critical": true,
+    "note": "Original chunk 197 uses 'Emboldened by this...' — 'this' = the French victory at the Battle of Valmy (chunk 196)."
+  },
+  {
+    "q_id": 22,
+    "question": "Whose guilt were members of the Convention evenly divided on during the trial of Citoyen Louis Capet?",
+    "gold_chunk_ids": [199],
+    "coref_critical": true,
+    "note": "Original chunk 199 uses 'the question of his guilt' — 'his' = Louis (Capet), established in chunk 198."
+  },
+  {
+    "q_id": 23,
+    "question": "When did the French Revolution begin and end?",
+    "gold_chunk_ids": [1],
+    "coref_critical": false,
+    "note": "Chunk 1 explicitly names the Estates General of 1789 and the Coup of 18 Brumaire on 9 November 1799."
+  },
+  {
+    "q_id": 24,
+    "question": "What radical measures did the Assembly take following the Storming of the Bastille?",
+    "gold_chunk_ids": [6],
+    "coref_critical": false,
+    "note": "Chunk 6 explicitly names the Storming of the Bastille and lists the measures (abolition of feudalism, etc.)."
+  },
+  {
+    "q_id": 25,
+    "question": "How many people were sentenced by the Revolutionary Tribunal during the Reign of Terror?",
+    "gold_chunk_ids": [11],
+    "coref_critical": false,
+    "note": "Chunk 11 states the number (about 16,000) explicitly; no pronoun involved."
+  },
+  {
+    "q_id": 26,
+    "question": "What reforms did finance minister Calonne propose in 1786?",
+    "gold_chunk_ids": [36],
+    "coref_critical": false,
+    "note": "Chunk 36 names Calonne and the proposed reforms explicitly."
+  },
+  {
+    "q_id": 27,
+    "question": "What were the Cahiers de doléances?",
+    "gold_chunk_ids": [59],
+    "coref_critical": false,
+    "note": "Chunk 59 explicitly names and defines the Cahiers de doléances."
+  },
+  {
+    "q_id": 28,
+    "question": "What has Bastille Day become?",
+    "gold_chunk_ids": [84],
+    "coref_critical": false,
+    "note": "Chunk 84 states this directly with no pronoun: 'Bastille Day has become the French national holiday.'"
+  },
+  {
+    "q_id": 29,
+    "question": "Where did the French defeat the Prussians in the first major French victory of the Revolutionary Wars?",
+    "gold_chunk_ids": [196],
+    "coref_critical": false,
+    "note": "Chunk 196 explicitly names the Battle of Valmy and the date (20 September)."
+  },
+  {
+    "q_id": 30,
+    "question": "Where was Louis XVI's death sentence carried out?",
+    "gold_chunk_ids": [203],
+    "coref_critical": false,
+    "note": "Chunk 203 explicitly names the Place de la Révolution (now Place de la Concorde)."
+  }
+]

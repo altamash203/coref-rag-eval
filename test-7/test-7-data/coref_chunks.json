@@ -1,0 +1,922 @@
+[
+  {
+    "chunk_id": 1,
+    "text": "The American Civil War (April 12, 1861 – May 26, 1865; also known by other names) was a civil war in the United States between the Union (\"the North\") and the Confederacy (\"the South\"), which was formed in 1861 by states that had seceded from the Union to preserve slavery in the United States."
+  },
+  {
+    "chunk_id": 2,
+    "text": "The South saw slavery as threatened because of the election of Abraham Lincoln and the growing abolitionist movement in the North."
+  },
+  {
+    "chunk_id": 3,
+    "text": "The war ended with Union victory, the dissolution of the Confederacy and the abolition of slavery, freeing four million African Americans."
+  },
+  {
+    "chunk_id": 4,
+    "text": "Decades of controversy over slavery came to a head when Abraham Lincoln, a Republican who opposed slavery's expansion, won the 1860 presidential election."
+  },
+  {
+    "chunk_id": 5,
+    "text": "Seven slave states in the South responded to Lincoln's victory by seceding from the United States and forming the Confederate States of America."
+  },
+  {
+    "chunk_id": 6,
+    "text": "The Confederacy seized US forts and other federal assets in the South."
+  },
+  {
+    "chunk_id": 7,
+    "text": "The war began on April 12, 1861, when the Confederacy bombarded Fort Sumter in South Carolina."
+  },
+  {
+    "chunk_id": 8,
+    "text": "A wave of enthusiasm for war swept over the North and South, as military recruitment soared."
+  },
+  {
+    "chunk_id": 9,
+    "text": "Four more Southern states seceded after the war began and, led by the Confederacy's president, Jefferson Davis, the Confederacy comprised eleven states, containing a third of the US population."
+  },
+  {
+    "chunk_id": 10,
+    "text": "Four years of intense combat, mostly in the South, ensued."
+  },
+  {
+    "chunk_id": 11,
+    "text": "During 1861–1862 in the western theater, the Union made permanent gains, though in the eastern theater the conflict was inconclusive."
+  },
+  {
+    "chunk_id": 12,
+    "text": "The abolition of slavery became a Union war goal on January 1, 1863, when Lincoln issued the Emancipation Proclamation, which declared all slaves in rebel states to be free, applying to more than 3.5 million of the 4 million enslaved people in the country."
+  },
+  {
+    "chunk_id": 13,
+    "text": "To the west, the Union first destroyed the Confederacy's river navy by the summer of 1862, then much of the Confederacy's western armies, and seized New Orleans."
+  },
+  {
+    "chunk_id": 14,
+    "text": "The successful 1863 Union siege of Vicksburg split the Confederacy in two at the Mississippi River, while Confederate general Robert E. Lee's incursion north failed at the Battle of Gettysburg."
+  },
+  {
+    "chunk_id": 15,
+    "text": "General Ulysses S. Grant's western successes led Lincoln to promote Grant to command of all Union armies in 1864."
+  },
+  {
+    "chunk_id": 16,
+    "text": "Inflicting an ever-tightening naval blockade of Confederate ports, the Union marshaled resources and manpower to attack the Confederacy from all directions."
+  },
+  {
+    "chunk_id": 17,
+    "text": "The Union's marshaling of resources and manpower to attack the Confederacy from all directions led to the fall of Atlanta in 1864 to Union general William Tecumseh Sherman, followed by Sherman's March to the Sea, which culminated in Sherman taking Savannah."
+  },
+  {
+    "chunk_id": 18,
+    "text": "The last significant battles raged around the ten-month Siege of Petersburg, gateway to the Confederate capital of Richmond."
+  },
+  {
+    "chunk_id": 19,
+    "text": "The Confederates abandoned Richmond, and on April 9, 1865, Lee surrendered to Grant following the Battle of Appomattox Court House, setting in motion the end of the war."
+  },
+  {
+    "chunk_id": 20,
+    "text": "Lincoln lived to see the Union victory but was shot by an assassin on April 14, dying the next day."
+  },
+  {
+    "chunk_id": 21,
+    "text": "By the end of the war, much of the South's infrastructure had been destroyed."
+  },
+  {
+    "chunk_id": 22,
+    "text": "The Confederacy collapsed, the Thirteenth Amendment abolished slavery, and four million enslaved black people were freed."
+  },
+  {
+    "chunk_id": 23,
+    "text": "The war-torn nation then entered the Reconstruction era in an attempt to rebuild the country, bring the former Confederate states back into the United States, and grant civil rights to freed slaves."
+  },
+  {
+    "chunk_id": 24,
+    "text": "The war is one of the most extensively studied and written about episodes in the history of the United States."
+  },
+  {
+    "chunk_id": 25,
+    "text": "The war remains the subject of cultural and historiographical debate."
+  },
+  {
+    "chunk_id": 26,
+    "text": "Of continuing interest is the myth of the Lost Cause of the Confederacy."
+  },
+  {
+    "chunk_id": 27,
+    "text": "The war was among the first to use industrial warfare."
+  },
+  {
+    "chunk_id": 28,
+    "text": "Railroads, the electrical telegraph, steamships, the ironclad warship, and mass-produced weapons were widely used."
+  },
+  {
+    "chunk_id": 29,
+    "text": "The war left an estimated 700,000 soldiers dead, along with an undetermined number of civilian deaths, making the war the deadliest in American history."
+  },
+  {
+    "chunk_id": 30,
+    "text": "The technology and brutality of the Civil War foreshadowed the coming world wars."
+  },
+  {
+    "chunk_id": 31,
+    "text": "The origins of the war were rooted in the desire of the Southern states to preserve the institution of slavery."
+  },
+  {
+    "chunk_id": 32,
+    "text": "Historians in the 21st century overwhelmingly agree on the centrality of slavery in the conflict—at least for the Southern states."
+  },
+  {
+    "chunk_id": 33,
+    "text": "Historians disagree on the North's reasons for refusing to allow the Southern states to secede."
+  },
+  {
+    "chunk_id": 34,
+    "text": "The pseudo-historical Lost Cause ideology denies that slavery was the principal cause of the secession, a view disproven by historical evidence, including the seceding states' own secession documents."
+  },
+  {
+    "chunk_id": 35,
+    "text": "After leaving the Union, Mississippi issued a declaration stating, \"Our position is thoroughly identified with the institution of slavery—the greatest material interest of the world.\""
+  },
+  {
+    "chunk_id": 36,
+    "text": "The principal political battle leading to Southern secession was over whether slavery would expand into the Western territories destined to become states."
+  },
+  {
+    "chunk_id": 37,
+    "text": "Initially Congress had admitted new states into the Union in pairs, one slave and one free."
+  },
+  {
+    "chunk_id": 38,
+    "text": "Admitting new states into the Union in pairs had kept a sectional balance in the Senate but not in the House of Representatives, as free states outstripped slave states in numbers of eligible voters."
+  },
+  {
+    "chunk_id": 39,
+    "text": "Thus, at mid-19th century, the free-versus-slave status of the new territories was a critical issue, both for the North, where anti-slavery sentiment had grown, and for the South, where the fear of slavery's abolition had grown."
+  },
+  {
+    "chunk_id": 40,
+    "text": "Another factor leading to secession and the formation of the Confederacy was the development of white Southern nationalism in the preceding decades."
+  },
+  {
+    "chunk_id": 41,
+    "text": "The primary reason for the North to reject secession was to preserve the Union, a cause based on American nationalism."
+  },
+  {
+    "chunk_id": 42,
+    "text": "Background factors in the run up to the Civil War were partisan politics, abolitionism, nullification versus secession, Southern and Northern nationalism, expansionism, economics, and modernization in the antebellum period."
+  },
+  {
+    "chunk_id": 43,
+    "text": "As a panel of historians said in 2011, \"while slavery and its various and multifaceted discontents were the primary cause of disunion, it was disunion itself that sparked the war.\""
+  },
+  {
+    "chunk_id": 44,
+    "text": "Abraham Lincoln won the 1860 presidential election."
+  },
+  {
+    "chunk_id": 45,
+    "text": "Southern leaders feared Lincoln would stop slavery's expansion and put slavery on a course toward extinction."
+  },
+  {
+    "chunk_id": 46,
+    "text": "Lincoln's victory triggered declarations of secession by seven slave states of the Deep South, all of whose riverfront or coastal economies were based on cotton that was cultivated by slave labor."
+  },
+  {
+    "chunk_id": 47,
+    "text": "Lincoln was not inaugurated until March 4, 1861, four months after Lincoln's 1860 election, which afforded the South time to prepare for war."
+  },
+  {
+    "chunk_id": 48,
+    "text": "Nationalists in the North and \"Unionists\" in the South refused to accept the declarations of secession, and no foreign government ever recognized the Confederacy."
+  },
+  {
+    "chunk_id": 49,
+    "text": "The US government, under President James Buchanan, refused to relinquish the nation's forts, which the Confederacy claimed were located in the Confederacy's territory."
+  },
+  {
+    "chunk_id": 50,
+    "text": "According to Lincoln, the American people had demonstrated, beginning with the American people's victory in the American Revolution and Revolutionary War and subsequent establishment of a sovereign nation, that the American people could successfully establish and administer a republic."
+  },
+  {
+    "chunk_id": 51,
+    "text": "Yet, Lincoln believed, a question remained unanswered: Could the nation be maintained as a republic, with the nation's government selected by vote of the people, in the face of internal attempts to destroy the nation or separate from the nation?"
+  },
+  {
+    "chunk_id": 52,
+    "text": "Lincoln's election provoked South Carolina's legislature to call a state convention to consider secession."
+  },
+  {
+    "chunk_id": 53,
+    "text": "South Carolina had done more than any other state to advance the notion that a state had the right to nullify federal laws and even secede."
+  },
+  {
+    "chunk_id": 54,
+    "text": "On December 20, 1860, the convention unanimously voted to secede and adopted a secession declaration."
+  },
+  {
+    "chunk_id": 55,
+    "text": "South Carolina's secession declaration argued for states' rights for slave owners but complained about states' rights in the North in the form of resistance to the federal Fugitive Slave Act, claiming that Northern states were not fulfilling the Northern states' obligations to assist in the return of fugitive slaves."
+  },
+  {
+    "chunk_id": 56,
+    "text": "The \"cotton states\" of Mississippi, Florida, Alabama, Georgia, Louisiana, and Texas followed suit, seceding in January and February 1861."
+  },
+  {
+    "chunk_id": 57,
+    "text": "Among the ordinances of secession, the ordinances of Texas, Alabama, and Virginia mentioned the plight of the \"slaveholding states\" at the hands of Northern abolitionists."
+  },
+  {
+    "chunk_id": 58,
+    "text": "The rest made no mention of slavery but were brief announcements by the legislatures of the dissolution of ties to the Union."
+  },
+  {
+    "chunk_id": 59,
+    "text": "However, at least four—South Carolina, Mississippi, Georgia, and Texas—provided detailed reasons for these four states' secession, all blaming the movement to abolish slavery and that movement's influence over the North."
+  },
+  {
+    "chunk_id": 60,
+    "text": "Southern states believed that the Fugitive Slave Clause made slaveholding a constitutional right."
+  },
+  {
+    "chunk_id": 61,
+    "text": "The seceded Southern states agreed to form a new federal government, the Confederate States of America, on February 4, 1861."
+  },
+  {
+    "chunk_id": 62,
+    "text": "The seceded Southern states took control of federal forts and other properties within the seceded Southern states' boundaries, with little resistance from outgoing president James Buchanan, whose term ended on March 4."
+  },
+  {
+    "chunk_id": 63,
+    "text": "Buchanan said the Dred Scott decision was proof the Southern states had no reason to secede and that the Union \"was intended to be perpetual\"."
+  },
+  {
+    "chunk_id": 64,
+    "text": "Buchanan added, however, that \"The power by force of arms to compel a State to remain in the Union\" was not among the \"enumerated powers granted to Congress\"."
+  },
+  {
+    "chunk_id": 65,
+    "text": "A quarter of the US army—the Texas garrison—was surrendered in February to state forces by the Texas garrison's general, David E. Twiggs, who joined the Confederacy."
+  },
+  {
+    "chunk_id": 66,
+    "text": "Referring to the seven Southern states that initially seceded, historian James McPherson wrote, \"Slaves constituted 47 percent of the population of the Confederate states but only 24 percent in the upper South.\""
+  },
+  {
+    "chunk_id": 67,
+    "text": "James McPherson added, \"In the four border states the proportion of slaves and slaveowners was less than half what it was in the eleven states that seceded.\""
+  },
+  {
+    "chunk_id": 68,
+    "text": "Eastern Tennessee and western Virginia also had less slavery and showed more support for the Union than the rest of the Confederacy."
+  },
+  {
+    "chunk_id": 69,
+    "text": "West Virginia left the rest of Virginia and joined the Union as West Virginia because of the slavery issue."
+  },
+  {
+    "chunk_id": 70,
+    "text": "Even within Virginia and Tennessee, which had seceded, McPherson wrote, \"The voters in 35 Virginia counties with a slave population of only 2.5 percent opposed secession by a margin of three to one, while voters in the remainder of the state, where slaves constituted 36 percent of the population, supported secession by more than ten to one."
+  },
+  {
+    "chunk_id": 71,
+    "text": "The thirty counties of east Tennessee that rejected secession by more than two to one contained a slave population of only 8 percent, while the rest of the state, with a slave population of 30 percent, voted for secession by a margin of seven to one.\""
+  },
+  {
+    "chunk_id": 72,
+    "text": "As Southerners resigned the Southerners' Senate and House seats, Republicans could pass projects that had been blocked."
+  },
+  {
+    "chunk_id": 73,
+    "text": "These included the Morrill Tariff, land grant colleges, a Homestead Act, a transcontinental railroad, the National Bank Act, authorization of United States Notes by the Legal Tender Act of 1862, the end of slavery in the District of Columbia, and a ban on slavery in the territories."
+  },
+  {
+    "chunk_id": 74,
+    "text": "The Revenue Act of 1861 introduced an income tax to help finance the war."
+  },
+  {
+    "chunk_id": 75,
+    "text": "In December 1860, the Crittenden Compromise was proposed to re-establish the Missouri Compromise line, by constitutionally banning slavery in territories to the north of the Missouri Compromise line, while permitting slavery to the south."
+  },
+  {
+    "chunk_id": 76,
+    "text": "The Compromise would likely have prevented secession, but Lincoln and the Republicans rejected the Compromise."
+  },
+  {
+    "chunk_id": 77,
+    "text": "Lincoln stated that any compromise that would extend slavery would bring down the Union."
+  },
+  {
+    "chunk_id": 78,
+    "text": "A February peace conference met in Washington, proposing a solution similar to the Compromise; the proposed solution was rejected by Congress."
+  },
+  {
+    "chunk_id": 79,
+    "text": "The Republicans proposed the Corwin Amendment, an alternative, not to interfere with slavery where slavery existed, but the South regarded the Corwin Amendment as insufficient."
+  },
+  {
+    "chunk_id": 80,
+    "text": "The remaining eight slave states rejected pleas to join the Confederacy, following a no-vote in Virginia's First Secessionist Convention on April 4."
+  },
+  {
+    "chunk_id": 81,
+    "text": "On March 4, Lincoln was sworn in as president."
+  },
+  {
+    "chunk_id": 82,
+    "text": "In Lincoln's first inaugural address, Lincoln argued that the Constitution was a more perfect union than the earlier Articles of Confederation and Perpetual Union, was a binding contract, and that secession was \"legally void\"."
+  },
+  {
+    "chunk_id": 83,
+    "text": "Lincoln did not intend to invade Southern states, nor to end slavery where slavery existed, but Lincoln said Lincoln would use force to maintain possession of federal property, including forts, arsenals, mints, and customhouses that had been seized."
+  },
+  {
+    "chunk_id": 84,
+    "text": "\"The mails, unless repelled, will continue to be furnished in all parts of the Union.\""
+  },
+  {
+    "chunk_id": 85,
+    "text": "Where conditions did not allow peaceful enforcement of federal law, US marshals and judges would be withdrawn."
+  },
+  {
+    "chunk_id": 86,
+    "text": "No mention was made of bullion lost from mints."
+  },
+  {
+    "chunk_id": 87,
+    "text": "Lincoln stated that it would be US policy \"to collect the duties and imposts\"; \"there will be no invasion, no using of force against or among the people anywhere\" that would justify an armed revolution."
+  },
+  {
+    "chunk_id": 88,
+    "text": "Lincoln's speech closed with a plea for restoration of the bonds of union, famously calling on \"the mystic chords of memory\" binding the two regions."
+  },
+  {
+    "chunk_id": 89,
+    "text": "The Confederacy sent delegates to Washington to negotiate a peace treaty."
+  },
+  {
+    "chunk_id": 90,
+    "text": "Lincoln rejected negotiations, because Lincoln claimed that the Confederacy was not a legitimate government and to make a treaty with the Confederacy would recognize the Confederacy as such."
+  },
+  {
+    "chunk_id": 91,
+    "text": "Lincoln instead attempted to negotiate directly with the governors of seceded states, whose administrations Lincoln continued to recognize."
+  },
+  {
+    "chunk_id": 92,
+    "text": "Complicating Lincoln's attempts to defuse the crisis was Secretary of State William H. Seward, who had been Lincoln's rival for the Republican nomination."
+  },
+  {
+    "chunk_id": 93,
+    "text": "Embittered by Seward's defeat, Seward agreed to support Lincoln's candidacy only after Seward was guaranteed the executive office then considered the second most powerful."
+  },
+  {
+    "chunk_id": 94,
+    "text": "In the early stages of Lincoln's presidency Seward held little regard for Lincoln, due to Lincoln's perceived inexperience."
+  },
+  {
+    "chunk_id": 95,
+    "text": "Seward viewed himself as the de facto head of government, the \"prime minister\" behind the throne."
+  },
+  {
+    "chunk_id": 96,
+    "text": "Seward attempted to engage in unauthorized and indirect negotiations that failed."
+  },
+  {
+    "chunk_id": 97,
+    "text": "Lincoln was determined to hold all remaining Union-occupied forts in the seceded states: Fort Pickens, Fort Jefferson, and Fort Taylor in Florida, and Fort Sumter in South Carolina."
+  },
+  {
+    "chunk_id": 98,
+    "text": "The American Civil War began on April 12, 1861, when Confederate forces opened fire on the Union-held Fort Sumter."
+  },
+  {
+    "chunk_id": 99,
+    "text": "Fort Sumter is located in the harbor of Charleston, South Carolina."
+  },
+  {
+    "chunk_id": 100,
+    "text": "Fort Sumter's status had been contentious for months."
+  },
+  {
+    "chunk_id": 101,
+    "text": "Outgoing president Buchanan had dithered in reinforcing Fort Sumter's garrison, commanded by Major Robert Anderson."
+  },
+  {
+    "chunk_id": 102,
+    "text": "Anderson took matters into Anderson's own hands and on December 26, 1860, under the cover of darkness, sailed the garrison from the poorly placed Fort Moultrie to the stalwart island Fort Sumter."
+  },
+  {
+    "chunk_id": 103,
+    "text": "Anderson's actions catapulted Anderson to hero status in the North."
+  },
+  {
+    "chunk_id": 104,
+    "text": "An attempt to resupply the fort on January 9, 1861, failed and nearly started the war then, but an informal truce held."
+  },
+  {
+    "chunk_id": 105,
+    "text": "On March 5, Lincoln was informed the fort was low on supplies."
+  },
+  {
+    "chunk_id": 106,
+    "text": "Fort Sumter proved a key challenge to Lincoln's administration."
+  },
+  {
+    "chunk_id": 107,
+    "text": "Back-channel dealing by Seward with the Confederates undermined Lincoln's decision-making; Seward wanted to pull out."
+  },
+  {
+    "chunk_id": 108,
+    "text": "But a firm hand by Lincoln tamed Seward, who was a staunch Lincoln ally thereafter."
+  },
+  {
+    "chunk_id": 109,
+    "text": "Lincoln decided holding the fort, which would require reinforcing the fort, was the only workable option."
+  },
+  {
+    "chunk_id": 110,
+    "text": "On April 6, Lincoln informed the Governor of South Carolina that a ship with food but no ammunition would attempt to supply the fort."
+  },
+  {
+    "chunk_id": 111,
+    "text": "Richard N. Current wrote: In short, it appears that Lincoln, when he decided to send the Sumter expedition, considered hostilities to be probable."
+  },
+  {
+    "chunk_id": 112,
+    "text": "It also appears, however, that he believed an unopposed and peaceable provisioning to be at least barely possible...."
+  },
+  {
+    "chunk_id": 113,
+    "text": "He thought hostilities would be the likely result, and he was determined that, if they should be, they must clearly be initiated by the Confederates."
+  },
+  {
+    "chunk_id": 114,
+    "text": "\"To say that Lincoln meant that the first shot would be fired by the other side if a first shot was fired, ... is not to say that he maneuvered to have the first shot fired.\""
+  },
+  {
+    "chunk_id": 115,
+    "text": "James McPherson describes this win-win approach as \"the first sign of the mastery that would mark Lincoln's presidency\"; the Union would win if the Union could resupply and hold the fort, and the South would be the aggressor if the South opened fire on an unarmed ship supplying starving men."
+  },
+  {
+    "chunk_id": 116,
+    "text": "An April 9 Confederate cabinet meeting resulted in Davis ordering General P. G. T. Beauregard to take the fort before supplies reached the fort."
+  },
+  {
+    "chunk_id": 117,
+    "text": "At 4:30 a.m. on April 12, Confederate forces fired the first of 4,000 shells at the fort; the fort fell the next day."
+  },
+  {
+    "chunk_id": 118,
+    "text": "The loss of Fort Sumter lit a patriotic fire under the North."
+  },
+  {
+    "chunk_id": 119,
+    "text": "On April 15, Lincoln called on the states to field 75,000 militiamen for 90 days; impassioned Union states met the quotas quickly."
+  },
+  {
+    "chunk_id": 120,
+    "text": "On May 3, 1861, Lincoln called for an additional 42,000 volunteers for three years."
+  },
+  {
+    "chunk_id": 121,
+    "text": "Shortly after Lincoln's May 3 call for additional volunteers, Virginia, Tennessee, Arkansas, and North Carolina seceded and joined the Confederacy."
+  },
+  {
+    "chunk_id": 122,
+    "text": "To reward Virginia, the Confederate capital was moved to Richmond."
+  },
+  {
+    "chunk_id": 123,
+    "text": "Maryland, Delaware, Missouri, and Kentucky, known as the border states, were slave states that had not seceded and whose people had divided loyalties to the North and South, with some men enlisting in the Union Army and others in the Confederate Army."
+  },
+  {
+    "chunk_id": 124,
+    "text": "West Virginia may be compared to the border states because West Virginia had slavery after West Virginia separated from Virginia and was admitted to the Union on June 20, 1863, but West Virginia was admitted under a plan of gradual emancipation known as the Willey Amendment."
+  },
+  {
+    "chunk_id": 125,
+    "text": "Maryland's territory surrounded Washington, D.C., and could cut Washington, D.C. off from the North."
+  },
+  {
+    "chunk_id": 126,
+    "text": "Maryland had anti-Lincoln officials who tolerated anti-army rioting in Baltimore and the burning of bridges, both aimed at hindering the passage of troops to Washington, D.C., and the South."
+  },
+  {
+    "chunk_id": 127,
+    "text": "Maryland's legislature voted overwhelmingly to stay in the Union, but rejected hostilities with Maryland's southern neighbors, voting to close Maryland's rail lines to prevent the rail lines' use for war."
+  },
+  {
+    "chunk_id": 128,
+    "text": "Lincoln responded by establishing martial law and suspending habeas corpus in Maryland, along with sending in militia units."
+  },
+  {
+    "chunk_id": 129,
+    "text": "In Ex parte Merryman, Chief Justice Roger Taney found that only Congress could suspend habeas corpus, but Lincoln ignored Taney's ruling."
+  },
+  {
+    "chunk_id": 130,
+    "text": "Lincoln took control of Maryland and the District of Columbia by seizing prominent figures, including arresting one-third of the members of the Maryland General Assembly, who were pro-Confederate, on September 17, 1861, the day the Maryland General Assembly intended to reconvene."
+  },
+  {
+    "chunk_id": 131,
+    "text": "All were held without trial at Fort McHenry in Baltimore."
+  },
+  {
+    "chunk_id": 132,
+    "text": "In September 1861, federal troops imprisoned a Baltimore newspaper editor, Frank Key Howard, after Howard criticized Lincoln in an editorial for ignoring Chief Justice Taney's ruling in Ex parte Merryman."
+  },
+  {
+    "chunk_id": 133,
+    "text": "Howard wrote a book about Howard's prison experiences, which was published early in 1863."
+  },
+  {
+    "chunk_id": 134,
+    "text": "The book \"stressed the crowded conditions and spartan hardships of prison life ... [and] likened the conditions in Fort Lafayette to those on 'a slave-ship, on the middle passage'\"."
+  },
+  {
+    "chunk_id": 135,
+    "text": "In Missouri, an elected convention on secession voted to remain in the Union."
+  },
+  {
+    "chunk_id": 136,
+    "text": "When pro-Confederate Governor Claiborne Fox Jackson called out the state militia, the state militia was attacked by federal forces under General Nathaniel Lyon, who chased the governor and rest of the State Guard to the southwestern corner of Missouri (see Missouri secession)."
+  },
+  {
+    "chunk_id": 137,
+    "text": "Early in the war the Confederacy controlled southern Missouri through the Confederate government of Missouri but was driven out after 1862."
+  },
+  {
+    "chunk_id": 138,
+    "text": "In the resulting vacuum, the convention on secession reconvened and took power as the Unionist provisional government of Missouri."
+  },
+  {
+    "chunk_id": 139,
+    "text": "Kentucky did not secede but declared Kentucky neutral."
+  },
+  {
+    "chunk_id": 140,
+    "text": "When Confederate forces entered in September 1861, Kentucky's neutrality ended and the state reaffirmed Kentucky's Union status while maintaining slavery."
+  },
+  {
+    "chunk_id": 141,
+    "text": "During an invasion by Confederate forces in 1861, Confederate sympathizers and delegates from 68 Kentucky counties organized the secession Russellville Convention, formed the shadow Confederate Government of Kentucky, inaugurated a governor, and Kentucky was admitted into the Confederacy on December 10, 1861."
+  },
+  {
+    "chunk_id": 142,
+    "text": "The Confederate Government of Kentucky's jurisdiction extended only as far as Confederate battle lines in the Commonwealth, which at the jurisdiction's greatest extent was over half the state, and the Confederate Government of Kentucky went into exile after October 1862."
+  },
+  {
+    "chunk_id": 143,
+    "text": "After Virginia's secession, a Unionist government in Wheeling asked 48 counties to vote on an ordinance to create a new state in October 1861."
+  },
+  {
+    "chunk_id": 144,
+    "text": "A voter turnout of 34 percent approved the statehood bill (96 percent approving)."
+  },
+  {
+    "chunk_id": 145,
+    "text": "Twenty-four secessionist counties were included in the new state, and the ensuing guerrilla war engaged about 40,000 federal troops for much of the war."
+  },
+  {
+    "chunk_id": 146,
+    "text": "Congress admitted West Virginia to the Union on June 20, 1863."
+  },
+  {
+    "chunk_id": 147,
+    "text": "West Virginians provided about 20,000 soldiers to each side in the war."
+  },
+  {
+    "chunk_id": 148,
+    "text": "A Unionist secession attempt occurred in East Tennessee but was suppressed by the Confederacy, which arrested over 3,000 men suspected of loyalty to the Union; the over 3,000 men were held without trial."
+  },
+  {
+    "chunk_id": 149,
+    "text": "The Civil War was marked by intense and frequent battles."
+  },
+  {
+    "chunk_id": 150,
+    "text": "Over four years, 237 named battles were fought, along with many smaller actions, often characterized by the battles' and smaller actions' bitter intensity and high casualties."
+  },
+  {
+    "chunk_id": 151,
+    "text": "Historian John Keegan described the Civil War as \"one of the most ferocious wars ever fought\", where in many cases the only target was the enemy's soldiers."
+  },
+  {
+    "chunk_id": 152,
+    "text": "As the Confederate states organized, the US Army numbered 16,000, while Northern governors began mobilizing the Northern governors' militias."
+  },
+  {
+    "chunk_id": 153,
+    "text": "The Confederate Congress authorized up to 100,000 troops in February."
+  },
+  {
+    "chunk_id": 154,
+    "text": "By May, Jefferson Davis was pushing for another 100,000 soldiers for one year or the duration, and the US Congress responded in kind."
+  },
+  {
+    "chunk_id": 155,
+    "text": "In the first year of the war, both sides had more volunteers than both sides could effectively train and equip."
+  },
+  {
+    "chunk_id": 156,
+    "text": "After the initial enthusiasm faded, relying on young men who came of age each year was not enough."
+  },
+  {
+    "chunk_id": 157,
+    "text": "Both sides enacted draft laws (conscription) to encourage or force volunteering, though relatively few were drafted."
+  },
+  {
+    "chunk_id": 158,
+    "text": "The Confederacy passed a draft law in April 1862 for men aged 18 to 35, with exemptions for overseers, government officials, and clergymen."
+  },
+  {
+    "chunk_id": 159,
+    "text": "The US Congress followed in July, authorizing a militia draft within states that could not meet those states' quota with volunteers."
+  },
+  {
+    "chunk_id": 160,
+    "text": "European immigrants joined the Union Army in large numbers, including 177,000 born in Germany and 144,000 in Ireland."
+  },
+  {
+    "chunk_id": 161,
+    "text": "About 50,000 Canadians served, around 2,500 of whom were black."
+  },
+  {
+    "chunk_id": 162,
+    "text": "When the Emancipation Proclamation went into effect in January 1863, ex-slaves were energetically recruited to meet state quotas."
+  },
+  {
+    "chunk_id": 163,
+    "text": "States and local communities offered higher cash bonuses for white volunteers."
+  },
+  {
+    "chunk_id": 164,
+    "text": "Congress tightened the draft law in March 1863."
+  },
+  {
+    "chunk_id": 165,
+    "text": "Men selected in the draft could provide substitutes or, until mid-1864, pay commutation money."
+  },
+  {
+    "chunk_id": 166,
+    "text": "Many eligibles pooled the eligibles' money to cover the cost of anyone drafted."
+  },
+  {
+    "chunk_id": 167,
+    "text": "Families used the substitute provision to select which man should go into the army and which should stay home."
+  },
+  {
+    "chunk_id": 168,
+    "text": "There was much evasion and resistance to the draft, especially in Catholic areas."
+  },
+  {
+    "chunk_id": 169,
+    "text": "The New York City draft riots in July 1863 involved Irish immigrants who had been signed up as citizens to swell the vote of the city's Democratic political machine, not realizing being signed up as citizens made the Irish immigrants liable for the draft."
+  },
+  {
+    "chunk_id": 170,
+    "text": "Of the 168,649 men procured for the Union through the draft, 117,986 were substitutes, leaving only 50,663 who were conscripted."
+  },
+  {
+    "chunk_id": 171,
+    "text": "In the North and South, draft laws were highly unpopular."
+  },
+  {
+    "chunk_id": 172,
+    "text": "In the North, some 120,000 men evaded conscription, many fleeing to Canada, and another 280,000 soldiers deserted during the war."
+  },
+  {
+    "chunk_id": 173,
+    "text": "At least 100,000 Southerners deserted, about 10 percent of the total."
+  },
+  {
+    "chunk_id": 174,
+    "text": "Southern desertion was high because many soldiers were more concerned about the fate of the soldiers' local area than the Southern cause."
+  },
+  {
+    "chunk_id": 175,
+    "text": "In the North, \"bounty jumpers\" enlisted to collect the generous bonus, deserted, then re-enlisted under a different name for a second bonus; 141 were caught and executed."
+  },
+  {
+    "chunk_id": 176,
+    "text": "From a tiny frontier force in 1860, the Union and Confederate armies grew into the \"largest and most efficient armies in the world\" within a few years."
+  },
+  {
+    "chunk_id": 177,
+    "text": "Some European observers at the time dismissed the Union and Confederate armies as amateur and unprofessional, but historian John Keegan concluded that each outmatched the French, Prussian, and Russian armies, and without the Atlantic, could have threatened any of the French, Prussian, and Russian armies with defeat."
+  },
+  {
+    "chunk_id": 178,
+    "text": "Unionism was strong in certain areas within the Confederacy."
+  },
+  {
+    "chunk_id": 179,
+    "text": "As many as 100,000 men living in states under Confederate control served in the Union Army or pro-Union guerrilla groups."
+  },
+  {
+    "chunk_id": 180,
+    "text": "Although Southern Unionists came from all classes, most Southern Unionists differed socially, culturally, and economically from the Southern Unionists' region's dominant prewar, slave-owning planter class."
+  },
+  {
+    "chunk_id": 181,
+    "text": "At the beginning of the Civil War, a parole system operated, under which captives agreed not to fight until exchanged."
+  },
+  {
+    "chunk_id": 182,
+    "text": "The paroled captives were held in camps run by the captives' own army, paid, but not allowed to perform any military duties."
+  },
+  {
+    "chunk_id": 183,
+    "text": "The system of exchanges collapsed in 1863 when the Confederacy refused to exchange black prisoners."
+  },
+  {
+    "chunk_id": 184,
+    "text": "After the collapse of the exchange system, approximately 56,000 of the 409,000 POWs died in prisons, accounting for 10 percent of the conflict's fatalities."
+  },
+  {
+    "chunk_id": 185,
+    "text": "Historian Elizabeth D. Leonard writes that between 500 and 1,000 women enlisted as soldiers on both sides, disguised as men."
+  },
+  {
+    "chunk_id": 186,
+    "text": "Women also served as spies, resistance activists, nurses, and hospital personnel."
+  },
+  {
+    "chunk_id": 187,
+    "text": "Women served on the Union hospital ship Red Rover and nursed Union and Confederate troops at field hospitals."
+  },
+  {
+    "chunk_id": 188,
+    "text": "Mary Edwards Walker, the only woman ever to receive the Medal of Honor, served in the Union Army and was given the medal for treating the wounded during the war."
+  },
+  {
+    "chunk_id": 189,
+    "text": "One woman, Jennie Hodgers, fought for the Union under the name Albert D. J. Cashier."
+  },
+  {
+    "chunk_id": 190,
+    "text": "After Jennie Hodgers returned to civilian life, Jennie Hodgers continued to live as a man until Jennie Hodgers died in 1915 at the age of 71."
+  },
+  {
+    "chunk_id": 191,
+    "text": "During the war, women in the North advocated for social reforms and created ladies' aid societies, also called soldiers' aid societies, which provided supplies to soldiers on the battlefield and cared for sick and wounded soldiers."
+  },
+  {
+    "chunk_id": 192,
+    "text": "Women in the North also held military rallies, village parades, and charity bazaars."
+  },
+  {
+    "chunk_id": 193,
+    "text": "Women like Susan B. Anthony saw that supporting the war effort was a way to pave the future for women's suffrage movements."
+  },
+  {
+    "chunk_id": 194,
+    "text": "In Susan B. Anthony's appeal to Northern women's loyalty, Anthony challenged the inconsistencies of the nation's founding ideal and the nation's actual practices concerning equality among women."
+  },
+  {
+    "chunk_id": 195,
+    "text": "Northern women during the Civil War also made great strides in the workforce, as Northern women helped contribute to the war effort by stepping into roles that were traditionally held by men."
+  },
+  {
+    "chunk_id": 196,
+    "text": "While women rarely worked in factories before the war, many filled men's places as women felt women could erase some of the boundaries that separated women from male preserves of power."
+  },
+  {
+    "chunk_id": 197,
+    "text": "Women were important in the workforce as women prepared and packed provisions, sewed uniforms and havelocks, and knitted socks and mittens."
+  },
+  {
+    "chunk_id": 198,
+    "text": "By entering these new environments, women made significant progress in the fight for women's equality in the workforce."
+  },
+  {
+    "chunk_id": 199,
+    "text": "Northern women were also essential in the wartime support, as Northern women were active participants in the war narrative."
+  },
+  {
+    "chunk_id": 200,
+    "text": "While women were not allowed to fight on the battlefield in the Civil War, women exhibited a patriotism that gave women the strength to maintain courage for women as well as women's households."
+  },
+  {
+    "chunk_id": 201,
+    "text": "While Northern women's men were off at war, Northern women created a landscape that emphasized love, sacrifice, and the nurturing of men's courage."
+  },
+  {
+    "chunk_id": 202,
+    "text": "This is demonstrated in feminized war literature that encouraged, expressed, and valorized men's patriotism."
+  },
+  {
+    "chunk_id": 203,
+    "text": "Women's unwavering encouragement and affection towards fighting men became a cornerstone of the war effort as the encouragement and affection helped sustain the spirits of the men on the frontlines."
+  },
+  {
+    "chunk_id": 204,
+    "text": "Confederate women during the Civil War focused on preserving the central economic institution of the Old South: the plantation."
+  },
+  {
+    "chunk_id": 205,
+    "text": "With so many men away at war, women were left with the land and the slaves."
+  },
+  {
+    "chunk_id": 206,
+    "text": "While some women hired male overseers to assist those women in directing and maintaining newly female-headed plantations, other women decided to stay at the plantations and run the plantations themselves."
+  },
+  {
+    "chunk_id": 207,
+    "text": "Southern women became focused on keeping the economic structure of the South as Southern women dealt with increasingly rebellious slaves."
+  },
+  {
+    "chunk_id": 208,
+    "text": "The South relied on enslaved labor because the South was an agrarian economy."
+  },
+  {
+    "chunk_id": 209,
+    "text": "A good number of enslaved men labored for the Confederate army during the war, which meant that enslaved women and children were increasingly at the center of the work force on the plantations."
+  },
+  {
+    "chunk_id": 210,
+    "text": "White Southern women struggled to maintain morale on the home front as White Southern women dealt with problems without men."
+  },
+  {
+    "chunk_id": 211,
+    "text": "Although Southern women were devoted to the Confederacy, many requested that Southern women's sons and husbands be discharged from the military to help Southern women at home."
+  },
+  {
+    "chunk_id": 212,
+    "text": "Eliza Adams wrote to the Confederate government to appeal for exemptions for Eliza Adams's sons' military service, as Eliza Adams had sent five sons and also sons-in-laws to fight for the Confederacy."
+  },
+  {
+    "chunk_id": 213,
+    "text": "Southern women were torn between Southern women's patriotic ideals and Southern women's daily realities of life on the home front."
+  },
+  {
+    "chunk_id": 214,
+    "text": "The Union Navy in 1861 was relatively small but, by 1865, expanded rapidly to 6,000 officers, 45,000 sailors, and 671 vessels totaling 510,396 tons."
+  },
+  {
+    "chunk_id": 215,
+    "text": "The Union Navy's mission was to blockade Confederate ports, control the river system, defend against Confederate raiders on the high seas, and be ready for a possible war with the British Royal Navy."
+  },
+  {
+    "chunk_id": 216,
+    "text": "The main riverine war was fought in the West, where major rivers gave access to the Confederate heartland."
+  },
+  {
+    "chunk_id": 217,
+    "text": "The US Navy eventually controlled the Red, Tennessee, Cumberland, Mississippi, and Ohio rivers."
+  },
+  {
+    "chunk_id": 218,
+    "text": "In the East, the Navy shelled Confederate forts and supported coastal army operations."
+  },
+  {
+    "chunk_id": 219,
+    "text": "The Civil War occurred during the early stages of the industrial revolution, leading to naval innovations, including the ironclad warship."
+  },
+  {
+    "chunk_id": 220,
+    "text": "The Confederacy, recognizing the need to counter the Union's naval superiority, built or converted over 130 vessels, including 26 ironclads."
+  },
+  {
+    "chunk_id": 221,
+    "text": "Despite these efforts, Confederate ships were largely unsuccessful against Union ironclads."
+  },
+  {
+    "chunk_id": 222,
+    "text": "The Union Navy used timberclads, tinclads, and armored gunboats."
+  },
+  {
+    "chunk_id": 223,
+    "text": "Shipyards in Cairo, Illinois, and St. Louis built or modified steamboats."
+  },
+  {
+    "chunk_id": 224,
+    "text": "The Confederacy experimented with the submarine CSS Hunley, which proved unsuccessful, and with the ironclad CSS Virginia, rebuilt from the sunken Union ship Merrimack."
+  },
+  {
+    "chunk_id": 225,
+    "text": "On March 8, 1862, Virginia inflicted significant damage on the Union's wooden fleet, but the next day, the first Union ironclad, USS Monitor, arrived to challenge Virginia in the Chesapeake Bay."
+  },
+  {
+    "chunk_id": 226,
+    "text": "The resulting three-hour Battle of Hampton Roads was a draw, proving ironclads were effective warships."
+  },
+  {
+    "chunk_id": 227,
+    "text": "The Confederacy scuttled the Virginia to prevent Virginia's capture, while the Union built many copies of the Monitor."
+  },
+  {
+    "chunk_id": 228,
+    "text": "The Confederacy's efforts to obtain warships from Great Britain failed, as Britain had no interest in selling warships to a nation at war with a stronger enemy and feared souring relations with the US."
+  },
+  {
+    "chunk_id": 229,
+    "text": "By early 1861, General Winfield Scott had devised the Anaconda Plan to win the war with minimal bloodshed, calling for a blockade of the Confederacy to suffocate the South into surrender."
+  },
+  {
+    "chunk_id": 230,
+    "text": "Lincoln adopted parts of the plan but opted for a more active war strategy."
+  }
+]
