@@ -198,8 +198,11 @@ Two honest qualifications, in both directions:
 
 **This does not affect tests 2 and 3.** Those use DAPR's externally authored queries and official
 qrels — neither the questions nor the relevance labels were written by anyone who saw the coref
-rewrites. That independence is precisely why their null result matters, and precisely what tests
-4–7 lack.
+rewrites. That independence is precisely why their **weak null** carries weight, and precisely what
+tests 4–7 lack. It is only a *weak* null because both tests run on an 8,000-passage subsample of a
+much larger corpus, which lifts the baseline — test 3's is already 0.7967 — and leaves little
+headroom for any effect to show. See
+[Limitation: tests 2–3 are a weak null](#limitation-tests-23-are-a-weak-null-not-a-clean-negative).
 
 ---
 
@@ -219,10 +222,13 @@ the hypothesis proposes.
 
 | test | flagged `coref_critical` | rewrite added nothing new | confirmed |
 |------|--------------------------|---------------------------|-----------|
-| test-4 | 22 | **7** | 15 |
+| test-4 | 22 | **7** † | 15 † |
 | test-5 | 21 | **15** | 6 |
 | test-6 | 22 | **0** | 22 |
 | test-7 | 22 | **4** | 18 |
+
+† Rule-dependent — see [the sensitivity note](#audit-sensitivity) below. Test-4 is the only test
+whose counts move when the tokenisation or gold-chunk scoping changes.
 
 **Test 6 is the clean one:** all 22 flagged questions have rewrites that genuinely add entity
 information. **Test 5 is the worst:** 15 of its 21 coref-critical questions are unsupported, which
@@ -240,11 +246,23 @@ Two things this does **not** do:
   `critical_confirmed` would require re-running the notebooks, which this pass did not do. So the
   reported per-test critical metrics and this table describe different question sets.
 
-The audit has its own sensitivity, and only test-4 is affected by it. Splitting on every
+### Audit sensitivity
+
+**† The audit has its own sensitivity, and only test-4 is affected by it.** Splitting on every
 non-alphanumeric character shreds `F-1` and `S-II` into fragments the length filter discards, which
 misclassifies two questions; scoping the token difference per gold chunk rather than over their
-union changes three more. Test-4's unsupported count therefore ranges from 4 to 9 depending on the
-rule, with 7 under the rule described above. Tests 5–7 give the same counts under every variant.
+union changes three more.
+
+| test-4 count | strict tokeniser | primary rule (used above) | per-gold-chunk scoping | range |
+|--------------|------------------|---------------------------|------------------------|-------|
+| confirmed | 13 | **15** | 18 | **13–18** |
+| added nothing new | 9 | **7** | 4 | **4–9** |
+
+So test-4's confirmed count is not a fixed 15 — it ranges 13 to 18 depending on rules that are
+defensible either way, and the number quoted in the table is one choice among three. **Tests 5, 6
+and 7 give identical counts under every variant** (6, 22 and 18 confirmed respectively), so the
+instability is specific to test-4, which is also the test with the two hyphenated-identifier
+questions and all three of the multi-gold-chunk questions.
 
 ---
 
@@ -266,7 +284,7 @@ with other whole documents until the cap. DAPR is hard precisely because the gol
 topically near-identical passages from the same document, so this retains the hardest distractors. A
 naive random sample would have thrown those away and made retrieval artificially easy.
 
-**The small corpus is a weakness for the null result specifically.** Fewer candidates means a higher
+**The small corpus is what makes this a weak null rather than a clean negative.** Fewer candidates means a higher
 baseline, and a higher baseline leaves less headroom for any effect to show. Test 3's baseline
 Recall@5 is **0.7967** — the retriever already finds the gold passage in the top 5 four times out of
 five. An 8,000-passage pool drawn from 2.68M is 0.3% of the corpus. Whatever coref could contribute
