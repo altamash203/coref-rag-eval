@@ -6,7 +6,10 @@
       52
     ],
     "coref_critical": false,
-    "note": "Original chunk 52 already names Hitler; 'himself' is reflexive, not a missing antecedent."
+    "note": "Original chunk 52 already names Hitler; 'himself' is reflexive, not a missing antecedent.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 2,
@@ -15,7 +18,12 @@
       81
     ],
     "coref_critical": true,
-    "note": "Original chunk 81 uses 'His largest collaboration' — 'His' = Franco."
+    "note": "Original chunk 81 uses 'His largest collaboration' — 'His' = Franco.",
+    "critical_confirmed": true,
+    "critical_added_tokens": [
+      "franco"
+    ],
+    "query_term_injection": true
   },
   {
     "q_id": 3,
@@ -24,7 +32,10 @@
       85
     ],
     "coref_critical": true,
-    "note": "Original chunk 85 uses 'his best army' — 'his' = Chiang Kai-shek."
+    "note": "Original chunk 85 uses 'his best army' — 'his' = Chiang Kai-shek.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 4,
@@ -33,7 +44,10 @@
       100
     ],
     "coref_critical": true,
-    "note": "Original chunk 100 uses 'him' and 'he' referring to Hitler; 'British interference had prevented him from seizing all of Czechoslovakia'."
+    "note": "Original chunk 100 uses 'him' and 'he' referring to Hitler; 'British interference had prevented him from seizing all of Czechoslovakia'.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 5,
@@ -42,7 +56,10 @@
       112
     ],
     "coref_critical": true,
-    "note": "Original chunk 112 uses 'he decided to delay it' — 'he' = Hitler, 'it' = the attack."
+    "note": "Original chunk 112 uses 'he decided to delay it' — 'he' = Hitler, 'it' = the attack.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 6,
@@ -51,7 +68,13 @@
       116
     ],
     "coref_critical": true,
-    "note": "Original chunk 116 uses 'handed him' — 'him' = Nevile Henderson (British ambassador)."
+    "note": "Original chunk 116 uses 'handed him' — 'him' = Nevile Henderson (British ambassador).",
+    "critical_confirmed": true,
+    "critical_added_tokens": [
+      "henderson",
+      "nevile"
+    ],
+    "query_term_injection": false
   },
   {
     "q_id": 7,
@@ -60,7 +83,10 @@
       124
     ],
     "coref_critical": true,
-    "note": "Original chunk 124 uses 'it was outflanked' — 'it' = the Polish counter-offensive."
+    "note": "Original chunk 124 uses 'it was outflanked' — 'it' = the Polish counter-offensive.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 8,
@@ -69,7 +95,10 @@
       145
     ],
     "coref_critical": false,
-    "note": "Original chunk 145 already names both Chamberlain and Churchill."
+    "note": "Original chunk 145 already names both Chamberlain and Churchill.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 9,
@@ -78,7 +107,10 @@
       152
     ],
     "coref_critical": true,
-    "note": "Original chunk 152 uses 'Paris fell to them' — 'them' = the Germans."
+    "note": "Original chunk 152 uses 'Paris fell to them' — 'them' = the Germans.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 10,
@@ -87,7 +119,10 @@
       156
     ],
     "coref_critical": true,
-    "note": "Original chunk 156 uses 'its failure' — 'its' = the German campaign for air superiority."
+    "note": "Original chunk 156 uses 'its failure' — 'its' = the German campaign for air superiority.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 11,
@@ -96,7 +131,10 @@
       164
     ],
     "coref_critical": false,
-    "note": "Fixed chunk 164 contains Roosevelt and the 'arsenal of democracy' quote explicitly."
+    "note": "Fixed chunk 164 contains Roosevelt and the 'arsenal of democracy' quote explicitly.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 12,
@@ -105,7 +143,10 @@
       178
     ],
     "coref_critical": false,
-    "note": "Original chunk 178 names Erwin Rommel and the Afrika Korps explicitly."
+    "note": "Original chunk 178 names Erwin Rommel and the Afrika Korps explicitly.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 13,
@@ -114,7 +155,10 @@
       195
     ],
     "coref_critical": false,
-    "note": "Original chunk 195 names Operation Barbarossa and the date; secondary pronouns only."
+    "note": "Original chunk 195 names Operation Barbarossa and the date; secondary pronouns only.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 14,
@@ -123,7 +167,10 @@
       210
     ],
     "coref_critical": true,
-    "note": "Original chunk 210 uses 'their campaign' and 'its main objectives' — both refer to the Axis campaign."
+    "note": "Original chunk 210 uses 'their campaign' and 'its main objectives' — both refer to the Axis campaign.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 15,
@@ -132,7 +179,10 @@
       225
     ],
     "coref_critical": true,
-    "note": "Original chunk 225 uses 'their resources' — 'their' = Dutch East Indies resources."
+    "note": "Original chunk 225 uses 'their resources' — 'their' = Dutch East Indies resources.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 16,
@@ -141,7 +191,14 @@
       243
     ],
     "coref_critical": true,
-    "note": "Original chunk 243 uses 'its ambitions' and 'it needed' — 'its/it' = Japan."
+    "note": "Original chunk 243 uses 'its ambitions' and 'it needed' — 'its/it' = Japan.",
+    "critical_confirmed": true,
+    "critical_added_tokens": [
+      "american",
+      "counter-proposal",
+      "requirements"
+    ],
+    "query_term_injection": false
   },
   {
     "q_id": 17,
@@ -150,7 +207,12 @@
       269
     ],
     "coref_critical": true,
-    "note": "Original chunk 269 uses 'left it overconfident' — 'it' = Japan."
+    "note": "Original chunk 269 uses 'left it overconfident' — 'it' = Japan.",
+    "critical_confirmed": true,
+    "critical_added_tokens": [
+      "japan"
+    ],
+    "query_term_injection": false
   },
   {
     "q_id": 18,
@@ -159,7 +221,10 @@
       302
     ],
     "coref_critical": true,
-    "note": "Original chunk 302 uses 'they did not resist' and 'they managed to scuttle their fleet' — 'they/their' = Vichy forces."
+    "note": "Original chunk 302 uses 'they did not resist' and 'they managed to scuttle their fleet' — 'they/their' = Vichy forces.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 19,
@@ -168,7 +233,13 @@
       365
     ],
     "coref_critical": true,
-    "note": "Original chunk 365 uses 'this offensive' — refers to the Battle of the Bulge / Ardennes counter-offensive."
+    "note": "Original chunk 365 uses 'this offensive' — refers to the Battle of the Bulge / Ardennes counter-offensive.",
+    "critical_confirmed": true,
+    "critical_added_tokens": [
+      "ardennes",
+      "counter-offensive"
+    ],
+    "query_term_injection": true
   },
   {
     "q_id": 20,
@@ -177,7 +248,10 @@
       380
     ],
     "coref_critical": true,
-    "note": "Fixed chunk 380 uses 'his vice president' — 'his' = Roosevelt. Names Truman explicitly."
+    "note": "Fixed chunk 380 uses 'his vice president' — 'his' = Roosevelt. Names Truman explicitly.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 21,
@@ -186,7 +260,10 @@
       398
     ],
     "coref_critical": true,
-    "note": "Original chunk 398 uses 'its economy' and 'its ability' — 'its' = Japan."
+    "note": "Original chunk 398 uses 'its economy' and 'its ability' — 'its' = Japan.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 22,
@@ -195,7 +272,18 @@
       405
     ],
     "coref_critical": true,
-    "note": "Original chunk 405 uses 'These two events' — atomic bombings and Soviet invasion of Manchuria."
+    "note": "Original chunk 405 uses 'These two events' — atomic bombings and Soviet invasion of Manchuria.",
+    "critical_confirmed": true,
+    "critical_added_tokens": [
+      "atomic",
+      "bombings",
+      "hiroshima",
+      "invasion",
+      "manchuria",
+      "nagasaki",
+      "soviet"
+    ],
+    "query_term_injection": false
   },
   {
     "q_id": 23,
@@ -204,7 +292,10 @@
       410
     ],
     "coref_critical": false,
-    "note": "Original chunk 410 names Austria and Germany directly."
+    "note": "Original chunk 410 names Austria and Germany directly.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 24,
@@ -213,7 +304,10 @@
       15
     ],
     "coref_critical": true,
-    "note": "Original chunk 15 uses 'its advances' — 'its' = Japan."
+    "note": "Original chunk 15 uses 'its advances' — 'its' = Japan.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 25,
@@ -222,7 +316,10 @@
       17
     ],
     "coref_critical": true,
-    "note": "Original chunk 17 uses 'its fascist regime' — 'its' = Italy."
+    "note": "Original chunk 17 uses 'its fascist regime' — 'its' = Italy.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 26,
@@ -231,7 +328,10 @@
       45
     ],
     "coref_critical": true,
-    "note": "Original chunk 45 uses 'its home territory', 'its overseas possessions', 'the country's armed forces' — all refer to Germany."
+    "note": "Original chunk 45 uses 'its home territory', 'its overseas possessions', 'the country's armed forces' — all refer to Germany.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 27,
@@ -240,7 +340,10 @@
       76
     ],
     "coref_critical": false,
-    "note": "Original chunk 76 names Mussolini and quantifies Italian troops and aircraft sent to Spain."
+    "note": "Original chunk 76 names Mussolini and quantifies Italian troops and aircraft sent to Spain.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 28,
@@ -249,7 +352,10 @@
       94
     ],
     "coref_critical": true,
-    "note": "Original chunk 94 uses 'its focus' — 'its' = Japan's naval doctrine (Nanshin-ron)."
+    "note": "Original chunk 94 uses 'its focus' — 'its' = Japan's naval doctrine (Nanshin-ron).",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 29,
@@ -258,7 +364,10 @@
       197
     ],
     "coref_critical": false,
-    "note": "Original chunk 197 already names Hitler explicitly in 'Hitler's objectives'."
+    "note": "Original chunk 197 already names Hitler explicitly in 'Hitler's objectives'.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   },
   {
     "q_id": 30,
@@ -267,6 +376,9 @@
       201
     ],
     "coref_critical": false,
-    "note": "Original chunk 201 states '2.8 million Soviet POWs had died in German captivity' explicitly."
+    "note": "Original chunk 201 states '2.8 million Soviet POWs had died in German captivity' explicitly.",
+    "critical_confirmed": false,
+    "critical_added_tokens": [],
+    "query_term_injection": false
   }
 ]

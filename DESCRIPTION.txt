@@ -1,0 +1,105 @@
+GitHub repository description — suggested replacement
+=====================================================
+
+The current description says "five tests" and calls the work a "three-test evaluation". Both are
+out of date: the repo contains seven tests, and tests 6 and 7 (run 2026-07-03) are the cleanest
+runs in the series. GitHub repository settings cannot be changed from here, so paste one of the
+following into Settings → General → Description yourself.
+
+The GitHub description field has a 350-character limit; all options below are within it.
+
+
+RECOMMENDED (284 characters)
+----------------------------
+Seven-test proof-of-concept on whether resolving coreference before embedding improves dense
+retrieval. Null on two public DAPR benchmarks; +0.00 to +0.17 Recall@5 on four constructed
+sentence-level evals (N=30 each) — with a documented query-term-injection limitation on those
+gains.
+
+
+SHORTER (180 characters)
+------------------------
+Does resolving coreference before embedding improve dense retrieval? Seven tests: null on public
+DAPR benchmarks, mixed on constructed sentence-level evals. Limitations documented.
+
+
+MOST CONSERVATIVE (237 characters)
+----------------------------------
+Research proof-of-concept: coreference resolution before embedding for RAG. Seven tests, mixed
+results. No gain on public benchmarks with external qrels; gains on self-authored sentence-level
+evals are confounded by query-term injection.
+
+
+Notes on wording
+----------------
+* "Seven-test" replaces both "five tests" and "three-test evaluation".
+* No number appears here that is not in a committed findings file. The range "+0.00 to +0.17"
+  spans test-5 coref_dense (0.0000) and test-4 coref_dense (+0.1667).
+* Avoid claiming the technique works. Tests 2-3 found nothing, and the positive results in tests
+  4-7 carry the query-term-injection limitation documented in the README.
+
+Suggested repository topics (GitHub "topics" field, separate from the description):
+    rag, retrieval, coreference-resolution, dense-retrieval, information-retrieval,
+    sentence-transformers, evaluation, reproducibility
+
+
+---
+
+
+Suggested pull request body
+===========================
+
+Title: Presentation and honesty pass — seven tests, two undisclosed limitations documented
+
+## What this does
+
+Makes the repo accurately represent what was actually done. No notebook, model, or retrieval run
+was re-executed; every number below either already existed in a committed findings file or is
+computed by `analysis/relabel_critical.py` from the committed JSON.
+
+## Changes
+
+**New: `analysis/relabel_critical.py` + `analysis/relabel_report.md`**
+Audits the `coref_critical` flags in tests 4-7 and measures query-term injection, reading only
+`original_chunks.json`, `coref_chunks.json` and `eval_questions.json`.
+
+**Task 1 — coref-critical relabelling.** A question is only genuinely coref-critical if the coref
+rewrite adds content words the original gold chunk lacked. Counts of flagged questions whose
+rewrite adds nothing: test-4 7/22, test-5 15/21, test-6 0/22, test-7 4/22. The original
+`coref_critical` flags are untouched; a new `critical_confirmed` field is added alongside them so
+the relabelling is auditable. No retrieval metric has been recomputed, and the report says so.
+
+**Task 2 — query-term injection, previously undisclosed.** Counts of coref-critical questions whose
+rewrite inserted a term the query also contains: test-4 14/22, test-5 2/21, test-6 8/22,
+test-7 16/22. Cross-referenced against the queries the findings record as recovered: all four of
+test-7's and three of four of test-4's are injection cases. Documented in a new README section that
+does not soften it. Tests 2-3 are unaffected — DAPR queries and qrels are externally authored.
+
+**Task 3 — DAPR framing.** Tests 2-3 subsample. Framed in both directions: the document-aware cap
+is a strength (it retains same-document distractors, the hardest ones), the small corpus is a
+weakness for the null specifically (test-3 baseline R@5 0.7967 leaves little headroom). They are
+now described as a weak null, not a clean negative.
+
+**Task 4 — README rewritten for seven tests.** Summary table covers all seven. Tests 6 and 7 are
+presented as the cleanest runs with their full reported metrics read from their findings files. New
+sections: read-the-deltas-at-the-right-scale (one query = ~3.3pp of Recall@5 at N=30), query-term
+injection, unsupported critical labels, weak null, and "What this repo does not establish". The
+"Do not overstate the win" section survives and is stronger.
+
+**Task 5 — housekeeping.** `LICENSE` (MIT), `requirements.txt`, `.gitignore`, and the
+`corefernce/` typo in the repo-structure diagram fixed. Notebooks were not reformatted or
+restructured.
+
+## What was corrected against the brief
+
+* test-4 counts depend on tokenisation. Splitting on every non-alphanumeric character shreds `F-1`
+  and `S-II` into sub-length-3 fragments and misclassifies q15 and q16, giving 9 unsupported and 12
+  injection. The hyphen-aware tokeniser used as primary gives 7 and 14. Both are reported.
+* Test 2 has no `MAX_QUERIES` cap — it uses all 271 test queries with qrels. Only test 3 caps at
+  200. Test 2's corpus constant is named `CONDITIONALQA_MAX_CORPUS`, not `CORPUS_MAX`.
+
+## Not done
+
+No notebook was re-run, so no `R@5_crit` figure has been recomputed against the new
+`critical_confirmed` labels. The reported critical metrics and the audit describe different
+question sets, and both the README and the report state this explicitly.

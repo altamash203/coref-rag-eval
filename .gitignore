@@ -1,0 +1,69 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+.installed.cfg
+MANIFEST
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- Jupyter / IPython ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+.virtual_documents/
+
+# --- Testing / typing / linting caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# --- This repo's run artifacts ---
+# The notebooks write a local embedding cache (CACHE_DIR = "./embed_cache").
+embed_cache/
+*/embed_cache/
+# HuggingFace / sentence-transformers model downloads, if pointed at the repo.
+.cache/
+hf_cache/
+
+# --- Secrets ---
+# Test 1 reads a DeepInfra API key.
+.env
+.env.*
+*.key
+secrets.json
+kaggle.json
+
+# --- Editors / OS ---
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

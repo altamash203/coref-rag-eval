@@ -1,7 +1,21 @@
 # Test 5 — Manual (LLM) Coreference Resolution vs. Model-Based Coref
 
 **Run date:** 2026-07-02  
-**Data folder:** `test-5-data/`  
+**Data folder:** `test-5-data/`
+
+> **Corrections (added during a later documentation audit; the text below is unchanged).**
+> Two statements in this file do not match the committed data:
+>
+> 1. The data-folder table lists `world_war2_wikipedia.txt`. **That file is not in the repository.**
+>    `test-5-data/` contains only `original_chunks.json`, `coref_chunks.json` and
+>    `eval_questions.json`. Tests 6 and 7 do ship their source `.txt` and a `fetch_article.py`;
+>    test 5 does not, so its chunking cannot be re-derived from source.
+> 2. "118 of 414 chunks changed from original" — comparing the two committed JSON files gives
+>    **116 of 414**. The 102 figure for chunks containing target pronouns was not re-checked.
+>
+> See also `analysis/relabel_report.md`: 15 of this test's 21 `coref_critical` questions have
+> rewrites that add no new content word to the gold chunk.
+
 **Hypothesis:** Replicate Test 4 on a larger, entity-dense corpus (~10k words) to verify that
 manual (LLM-quality) coreference resolution at ingestion time improves retrieval on sentence-level
 chunks — especially on **coref-critical** questions where gold chunks use pronouns instead of named
