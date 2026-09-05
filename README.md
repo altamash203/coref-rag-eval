@@ -36,8 +36,7 @@ the gold chunk the exact entity string the query is searching for. On test-7, **
 coref recovered are cases like this. On those questions the recall gain is partly a lexical term
 match that the rewrite manufactured, not evidence that the technique generalises. A second audit
 found that a share of the questions flagged `coref_critical` have rewrites that add no new content
-word to the gold chunk at all — 15 of 21 on test-5. Both audits are reproducible:
-[`analysis/relabel_critical.py`](analysis/relabel_critical.py).
+word to the gold chunk at all — 15 of 21 on test-5.
 
 **Bottom line:** the mechanism is real and demonstrable on constructed sentence-level evals. On the
 two public benchmarks it produced no gain, and the constructed evals carry a validity problem that
@@ -145,9 +144,18 @@ chunk moved from rank 8 to rank 3.
 
 ### The counts
 
-Measured by [`analysis/relabel_critical.py`](analysis/relabel_critical.py) over the committed JSON:
-a coref-critical question counts as injection when the content words its rewrite added to the gold
+A coref-critical question counts as injection when the content words its rewrite added to the gold
 chunk intersect the question's own content words.
+
+> **Provenance.** The relabelling and injection counts in this README were computed from the
+> committed `original_chunks.json`, `coref_chunks.json` and `eval_questions.json` in each
+> `test-*-data/` folder, and can be recomputed from those files: tokenise the gold chunk before and
+> after the rewrite into lowercased content words (dropping stopwords and tokens of two characters
+> or fewer, keeping hyphenated identifiers such as `F-1` whole), take the set difference to get the
+> added tokens, and intersect that with the question's tokens. No retrieval run is involved. The
+> per-question verdicts are stored in each `eval_questions.json` as `critical_confirmed`,
+> `critical_added_tokens` and `query_term_injection`, so every count below can be checked by
+> summing those fields.
 
 | test | coref-critical questions | rewrite injected a query term |
 |------|--------------------------|-------------------------------|
@@ -223,17 +231,20 @@ never critical.
 
 Two things this does **not** do:
 
-- **The original labels have not been changed.** `analysis/relabel_critical.py --write-flags` adds a
-  new `critical_confirmed` field alongside the existing `coref_critical` field in every
-  `eval_questions.json`. The original flags are preserved, so the relabelling is auditable.
+- **The original labels have not been changed.** A `critical_confirmed` field was added alongside
+  the existing `coref_critical` field in every `eval_questions.json`, together with
+  `critical_added_tokens` (the content words the rewrite added) and `query_term_injection`. The
+  original flags are preserved, so the relabelling is auditable per question in the data itself.
 - **No metric has been recomputed.** Every `R@5_crit` figure in the findings files and in this README
   was computed against the **original** labels. Recomputing the critical-subset metrics against
   `critical_confirmed` would require re-running the notebooks, which this pass did not do. So the
   reported per-test critical metrics and this table describe different question sets.
 
-The audit's own sensitivity is reported in [`analysis/relabel_report.md`](analysis/relabel_report.md):
-tokenisation choices change test-4's unsupported count between 4 and 9, and leave tests 5–7
-unchanged.
+The audit has its own sensitivity, and only test-4 is affected by it. Splitting on every
+non-alphanumeric character shreds `F-1` and `S-II` into fragments the length filter discards, which
+misclassifies two questions; scoping the token difference per gold chunk rather than over their
+union changes three more. Test-4's unsupported count therefore ranges from 4 to 9 depending on the
+rule, with 7 under the rule described above. Tests 5–7 give the same counts under every variant.
 
 ---
 
@@ -346,8 +357,6 @@ This section survives from the earlier version of this README, with the new find
 | `test-5/coref_public_eval_v5.ipynb` | **Test 5** — manual LLM coref, sentence chunks, WWII (414 chunks). Dense flat. |
 | `test-6/coref_public_eval_v6.ipynb` | **Test 6** — manual chunking + manual coref, French Revolution. +0.0667 dense, +0.1000 hybrid. |
 | `test-7/coref_public_eval_v7.ipynb` | **Test 7** — manual chunking + manual coref, American Civil War. +0.1000 dense, +0.1333 hybrid. |
-| `analysis/relabel_critical.py` | Audits the `coref_critical` flags and counts query-term injection, from the committed JSON only. |
-| `analysis/relabel_report.md` | Output of the above: per-test counts, every unsupported question, every injection case. |
 | `coref-rag-hypothesis-and-findings.md` | Research write-up: hypothesis and synthesis. **Covers tests 1–5 only.** |
 | `test-*/test-*-findings.md` | Per-test detailed results |
 
@@ -373,13 +382,6 @@ article text and the `fetch_article.py` that produced it.
 3. Run all remaining cells. Results print inline and a findings `.md` is written.
 
 Test 1 additionally needs a DeepInfra API key (question generation and embeddings).
-
-**The audit** re-runs on CPU in under a second, standard library only:
-
-```bash
-python analysis/relabel_critical.py               # regenerate analysis/relabel_report.md
-python analysis/relabel_critical.py --write-flags # also annotate the eval_questions.json files
-```
 
 ---
 
@@ -453,10 +455,6 @@ coref-rag-eval/
 ├── LICENSE
 ├── requirements.txt
 ├── coref-rag-hypothesis-and-findings.md   ← research write-up (tests 1–5 only)
-├── analysis/
-│   ├── relabel_critical.py                ← coref-critical + injection audit
-│   ├── relabel_report.md                  ← audit output
-│   └── relabel_report.json
 ├── test-1/
 │   ├── coref_rag_benchmark.ipynb
 │   └── test-1-findings.md

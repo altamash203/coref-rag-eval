@@ -18,9 +18,10 @@
 > 2. **Unsupported critical labels.** 7 of test 4's 22 and 15 of test 5's 21 questions flagged
 >    `coref_critical` have rewrites that add no new content word to the gold chunk at all.
 >
-> Both are quantified in [`analysis/relabel_report.md`](analysis/relabel_report.md) and discussed in
-> the README. The metrics in this document were computed against the original labels and have not
-> been recomputed.
+> Both are quantified and discussed in the [README](README.md), and the per-question verdicts are
+> recorded in each `test-*-data/eval_questions.json` as `critical_confirmed`,
+> `critical_added_tokens` and `query_term_injection`. The metrics in this document were computed
+> against the original labels and have not been recomputed.
 
 ## Abstract
 

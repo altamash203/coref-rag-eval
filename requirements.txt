@@ -34,6 +34,3 @@ openai
 
 # --- Tests 6-7 only: fetch_article.py ---
 # fetch_article.py imports urllib and json from the standard library only; nothing to install.
-
-# --- analysis/relabel_critical.py ---
-# Standard library only (json, re, argparse, pathlib). No dependency needed.

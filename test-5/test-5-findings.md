@@ -13,8 +13,9 @@
 > 2. "118 of 414 chunks changed from original" — comparing the two committed JSON files gives
 >    **116 of 414**. The 102 figure for chunks containing target pronouns was not re-checked.
 >
-> See also `analysis/relabel_report.md`: 15 of this test's 21 `coref_critical` questions have
-> rewrites that add no new content word to the gold chunk.
+> See also the README's limitations sections: 15 of this test's 21 `coref_critical` questions have
+> rewrites that add no new content word to the gold chunk. The per-question verdicts are in
+> `test-5-data/eval_questions.json` as `critical_confirmed`.
 
 **Hypothesis:** Replicate Test 4 on a larger, entity-dense corpus (~10k words) to verify that
 manual (LLM-quality) coreference resolution at ingestion time improves retrieval on sentence-level
