@@ -50,11 +50,18 @@ help retrieval here (see analysis).
 
 ## Interpretation
 
-### 1. coref_dense is flat (not a failure — a null result)
+### 1. coref_dense is flat (not a failure — a weak null)
 Recall −0.0015, nDCG +0.0008, MRR +0.008, with an even **4 recovered / 4 hurt** split. Statistically
 this is noise: on DAPR ConditionalQA, resolving coreference before embedding neither helps nor hurts
 dense retrieval. The tiny MRR gain (+0.008) hints coref occasionally sharpens rank position, but it
 does not move top-5 recall.
+
+**Why "weak" null and not a clean negative:** this run uses 8,093 passages capped from the full
+~69k-passage corpus (see Scope notes). A smaller pool means fewer candidates to rank against, which
+raises the baseline and shrinks the headroom any effect would have to show up in — the same caveat
+applies with more force to Test 3, whose baseline R@5 is already 0.7967. This result shows coref
+failed to demonstrate a benefit *in this subsampled setting*; it does not establish that there is
+none on the full corpus.
 
 ### 2. coref_hybrid is worse — and it's a *fusion* issue, not a coref issue
 The hybrid lost −0.033 recall (22 recovered / 35 hurt). The cause is the RRF weighting, not coref:

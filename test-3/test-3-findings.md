@@ -108,6 +108,14 @@ benchmarks with a competent dense model**. The cases where it helps — pronoun-
 with entity queries and a weak baseline — are too rare in standard informative-text corpora to move
 aggregate metrics.
 
+**Read this as a weak null, not a clean negative.** This run indexes 8,000 passages capped from
+DAPR NaturalQuestions' full ~2.68M-passage corpus (see Scope notes). Fewer candidates to rank
+against means a higher baseline — here **R@5 0.7967**, i.e. the retriever already finds the gold
+passage in the top 5 four times out of five — and a high baseline leaves very little headroom for
+any effect to appear in. The finding is that coref *failed to demonstrate* a benefit in this
+subsampled setting with a strong baseline; it does not establish that there is no benefit on the
+full corpus, where the baseline would be lower and the headroom larger.
+
 **Practical recommendation:** coref-before-embed is not worth the complexity/runtime for general
 informative retrieval. It may have value in specific domains where:
 - The passage genuinely never names the entity (e.g. legal transcripts, interview transcripts).
